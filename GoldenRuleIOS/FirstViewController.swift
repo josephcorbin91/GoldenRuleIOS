@@ -12,9 +12,24 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "earth_background.png")!)        // Do any additional setup after loading the view, typically from a nib.
+        self.view.addBackground()
     }
 
+    extension UIView {
+func addBackground() {
+    // screen width and height:
+    let width = UIScreen.mainScreen().bounds.size.width
+    let height = UIScreen.mainScreen().bounds.size.height
+
+    let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
+    imageViewBackground.image = UIImage(named: "earth_background.png")
+
+    // you can change the content mode:
+    imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFill
+
+    self.addSubview(imageViewBackground)
+    self.sendSubviewToBack(imageViewBackground)
+}}
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
