@@ -23,7 +23,17 @@ class FirstViewController: UIViewController {
         })
     }
 
-    extension UIView {
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
+
+extension UIView {
 
     func addBackground() {
     // screen width and height:
@@ -39,11 +49,4 @@ class FirstViewController: UIViewController {
     self.addSubview(imageViewBackground)
     self.sendSubviewToBack(imageViewBackground)
 }}
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
-}
 
