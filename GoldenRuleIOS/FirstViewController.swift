@@ -39,14 +39,14 @@ extension UIView {
     // screen width and height:
     let width = UIScreen.main.bounds.size.width
     let height = UIScreen.main.bounds.size.height
-
-    let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
+g
+    let imageViewBackground = UIImageView(frame: CGRect(0, 0, width, height))
     imageViewBackground.image = UIImage(named: "earth_background.png")
 
     // you can change the content mode:
-    imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFill
+    imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
 
     self.addSubview(imageViewBackground)
-    self.sendSubviewToBack(imageViewBackground)
+    self.sendSubview(imageViewBackground)
 }}
 
