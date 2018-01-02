@@ -15,12 +15,16 @@ class FirstViewController: UIViewController {
     
 	func sendNotification() {
     let content = UNMutableNotificationContent()
-    content.title = "Meeting Reminder"
+    content.title = "Golden Peace hour"
     content.subtitle = messageSubtitle
-    content.body = "Don't forget to bring coffee."
+    content.body = "Do not forget to follow the golden rule"
     content.badge = 1
+    var date = DateComponent()
+    date.hour=12
+    date.minute=34
 		
-    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,repeats: false)
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1,repeats: false)
+    let otherTrigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
     let requestIdentifier = "demoNotification"
     let request = UNNotificationRequest(identifier: requestIdentifier,content: content, trigger: trigger)
     UNUserNotificationCenter.current().add(request,withCompletionHandler: { (error) in
