@@ -11,6 +11,7 @@ import UserNotifications
 
 class FirstViewController: UIViewController {
 
+    @IBOutlet weak var InfoButton: UIButton!
     var messageSubtitle = "Staff meeting in 20 minutes"
     
 	func sendNotification() {
@@ -19,11 +20,11 @@ class FirstViewController: UIViewController {
     content.subtitle = messageSubtitle
     content.body = "Do not forget to follow the golden rule"
     content.badge = 1
-    var date = DateComponent()
+    var date = DateComponents()
     date.hour=12
     date.minute=34
 		
-    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1,repeats: false)
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60,repeats: true)
     let otherTrigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
     let requestIdentifier = "demoNotification"
     let request = UNNotificationRequest(identifier: requestIdentifier,content: content, trigger: trigger)
@@ -67,6 +68,6 @@ extension UIView {
     imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
 
     self.addSubview(imageViewBackground)
-    self.sendSubview(toback: imageViewBackground)
+    self.sendSubview(toBack: imageViewBackground)
 }}
 
