@@ -39,8 +39,8 @@ extension UIView {
     // screen width and height:
     let width = UIScreen.main.bounds.size.width
     let height = UIScreen.main.bounds.size.height
-g
-    let imageViewBackground = UIImageView(frame: CGRect(0, 0, width, height))
+
+    let imageViewBackground = UIImageView(frame: CGRect(x:0, y:0, width:width, height:height))
     imageViewBackground.image = UIImage(named: "earth_background.png")
 
     // you can change the content mode:
