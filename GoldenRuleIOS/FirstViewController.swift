@@ -35,6 +35,11 @@ class FirstViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
+	    
+	    
+    tapButton.setImage(UIImage(named: "earth_background.png")?.imageWithRenderingMode(.AlwaysOriginal), forState: .Normal)
+    tapButton.setImage(UIImage(named: "earth_background.png")?.imageWithRenderingMode(.AlwaysOriginal), forState: .Highlighted)
+
         self.view.addBackground()
  UNUserNotificationCenter.current().requestAuthorization(options: 
 			[[.alert, .sound, .badge]], 
