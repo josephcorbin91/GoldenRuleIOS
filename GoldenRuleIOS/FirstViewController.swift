@@ -37,8 +37,8 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
 	    
 	    
-    tapButton.setImage(UIImage(named: "earth_background.png")?.imageWithRenderingMode(.AlwaysOriginal), forState: .Normal)
-    tapButton.setImage(UIImage(named: "earth_background.png")?.imageWithRenderingMode(.AlwaysOriginal), forState: .Highlighted)
+    InfoButton.setImage(UIImage(named: "earth_background.png")?.withRenderingMode(.alwaysOriginal), for: [])
+    InfoButton.setImage(UIImage(named: "earth_background.png")?.withRenderingMode(.alwaysOriginal), for: .highlighted)
 
         self.view.addBackground()
  UNUserNotificationCenter.current().requestAuthorization(options: 
