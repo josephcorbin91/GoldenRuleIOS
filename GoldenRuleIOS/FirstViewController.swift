@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import UserNotifications
 
 class FirstViewController: UIViewController {
 
+    var messageSubtitle = "Staff meeting in 20 minutes"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addBackground()
+ UNUserNotificationCenter.current().requestAuthorization(options: 
+			[[.alert, .sound, .badge]], 
+				completionHandler: { (granted, error) in
+            // Handle Error
+        })
     }
 
     extension UIView {
-func addBackground() {
+
+    func addBackground() {
     // screen width and height:
     let width = UIScreen.mainScreen().bounds.size.width
     let height = UIScreen.mainScreen().bounds.size.height
