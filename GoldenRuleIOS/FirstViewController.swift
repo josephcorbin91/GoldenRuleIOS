@@ -37,8 +37,8 @@ extension UIView {
 
     func addBackground() {
     // screen width and height:
-    let width = UIScreen.mainScreen().bounds.size.width
-    let height = UIScreen.mainScreen().bounds.size.height
+    let width = UIScreen.main.bounds.size.width
+    let height = UIScreen.main.bounds.size.height
 
     let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
     imageViewBackground.image = UIImage(named: "earth_background.png")
