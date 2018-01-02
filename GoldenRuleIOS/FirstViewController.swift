@@ -47,6 +47,6 @@ extension UIView {
     imageViewBackground.contentMode = UIViewContentMode.scaleAspectFill
 
     self.addSubview(imageViewBackground)
-    self.sendSubview(imageViewBackground)
+    self.sendSubview(toback: imageViewBackground)
 }}
 
