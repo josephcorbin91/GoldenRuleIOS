@@ -23,7 +23,7 @@ class FirstViewController: UIViewController {
     let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,repeats: false)
     let requestIdentifier = "demoNotification"
     let request = UNNotificationRequest(identifier: requestIdentifier,content: content, trigger: trigger)
-    UNUserNotificationCenter.current().add(request,withCompletionHandler: { (error) 
+    UNUserNotificationCenter.current().add(request,withCompletionHandler: { (error) in
         	// Handle error
     })
 	}
