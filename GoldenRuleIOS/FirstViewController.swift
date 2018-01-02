@@ -13,6 +13,21 @@ class FirstViewController: UIViewController {
 
     var messageSubtitle = "Staff meeting in 20 minutes"
     
+	func sendNotification() {
+    let content = UNMutableNotificationContent()
+    content.title = "Meeting Reminder"
+    content.subtitle = messageSubtitle
+    content.body = "Don't forget to bring coffee."
+    content.badge = 1
+		
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5,repeats: false)
+    let requestIdentifier = "demoNotification"
+    let request = UNNotificationRequest(identifier: requestIdentifier,content: content, trigger: trigger)
+    UNUserNotificationCenter.current().add(request,withCompletionHandler: { (error) 
+        	// Handle error
+    })
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addBackground()
@@ -21,6 +36,7 @@ class FirstViewController: UIViewController {
 				completionHandler: { (granted, error) in
             // Handle Error
         })
+	    sendNotification()
     }
 
     
