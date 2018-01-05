@@ -33,9 +33,26 @@ class FirstViewController: UIViewController {
     })
 	}
 	
+	
+	
+	func makeRestCall(){
+		
+	let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+
+let request = NSURLRequest(URL: NSURL(string: "https://golden-rule-node-back-end.herokuapp.com/api/messages")!)
+
+let task: NSURLSessionDataTask = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+    if let data = data {
+        let response = NSString(data: data, encoding: NSUTF8StringEncoding)
+        print(response)
+    }
+}
+task.resume()	
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-	    
+	    makeRestCall()
 	    
     InfoButton.setImage(UIImage(named: "earth_background.png")?.withRenderingMode(.alwaysOriginal), for: [])
     InfoButton.setImage(UIImage(named: "earth_background.png")?.withRenderingMode(.alwaysOriginal), for: .highlighted)
