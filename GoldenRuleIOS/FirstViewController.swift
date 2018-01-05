@@ -37,13 +37,13 @@ class FirstViewController: UIViewController {
 	
 	func makeRestCall(){
 		
-	let session = NSURLSession(configuration: NSURLSessionConfiguration.defaultSessionConfiguration())
+	let session = URLSession(configuration: URLSessionConfiguration.default)
 
-let request = NSURLRequest(URL: NSURL(string: "https://golden-rule-node-back-end.herokuapp.com/api/messages")!)
+let request = URLRequest(url: URL(string: "https://golden-rule-node-back-end.herokuapp.com/api/messages")!)
 
-let task: NSURLSessionDataTask = session.dataTaskWithRequest(request) { (data, response, error) -> Void in
+        let task: URLSessionDataTask = session.dataTask(with: request) { (data, response, error) -> Void in
     if let data = data {
-        let response = NSString(data: data, encoding: NSUTF8StringEncoding)
+        let response = String(data: data, encoding: String.Encoding.utf8)
         print(response)
     }
 }
