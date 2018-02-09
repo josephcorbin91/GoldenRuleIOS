@@ -12,6 +12,10 @@ import UserNotifications
 class FirstViewController: UIViewController {
 
     @IBOutlet weak var InfoButton: UIButton!
+    @IBOutlet weak var SetttingsButton: UIButton!
+    
+    @IBOutlet weak var Message: UIButton!
+    @IBOutlet weak var Locator: UIButton!
     var messageSubtitle = "Staff meeting in 20 minutes"
     
 	func sendNotification() {
