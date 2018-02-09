@@ -18,15 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Golden Rule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIJ-b8-RGV">
-                                <rect key="frame" x="157" y="323" width="93" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen" translatesAutoresizingMaskIntoConstraints="NO" id="TXv-bU-PgU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TXv-bU-PgU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qr1-As-LYF"/>
+                            <constraint firstItem="TXv-bU-PgU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cT4-z9-2lI"/>
+                            <constraint firstItem="TXv-bU-PgU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kkh-if-jwQ"/>
+                            <constraint firstItem="TXv-bU-PgU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="xVU-26-UCu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -35,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash_screen" width="1440" height="2560"/>
+    </resources>
 </document>
