@@ -57,11 +57,21 @@ task.resume()
     override func viewDidLoad() {
         super.viewDidLoad()
 	    makeRestCall()
-	    
-    InfoButton.setImage(UIImage(named: "earth_background.png")?.withRenderingMode(.alwaysOriginal), for: [])
-    InfoButton.setImage(UIImage(named: "earth_background.png")?.withRenderingMode(.alwaysOriginal), for: .highlighted)
 
-        self.view.addBackground()
+	let infoButton = UIButton(type: .custom)
+	infoButton.setImage(UIImage(named: "infoButton.png"), for: .normal)
+        
+	let settingsButton = UIButton(type: .custom)
+	settingsButton.setImage(UIImage(named: "settingsButton.png"), for: .normal)
+        
+	let locatorButton = UIButton(type: .custom)
+	locatorButton.setImage(UIImage(named: "locatorButton.png"), for: .normal)
+        
+	let messageButton = UIButton(type: .custom)
+	messageButton.setImage(UIImage(named: "messageButton.png"), for: .normal)
+        
+	self.view.addBackground()
+	    
  UNUserNotificationCenter.current().requestAuthorization(options: 
 			[[.alert, .sound, .badge]], 
 				completionHandler: { (granted, error) in
