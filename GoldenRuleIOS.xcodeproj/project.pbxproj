@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92A778724A2E9DEAB188EAE0 /* Pods_GoldenRuleIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF20494393C0096691BCFD5 /* Pods_GoldenRuleIOS.framework */; };
 		A91ED3141FF42AA500AF1EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */; };
 		A91ED3161FF42AA500AF1EB8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3151FF42AA500AF1EB8 /* FirstViewController.swift */; };
 		A91ED3181FF42AA500AF1EB8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3171FF42AA500AF1EB8 /* SecondViewController.swift */; };
@@ -15,6 +16,9 @@
 		A91ED3201FF42AA500AF1EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */; };
 		A91ED32B1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED32A1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift */; };
 		A91ED3361FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */; };
+		D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */; };
+		DD3E5D302036486E00E340DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD3E5D2F2036486D00E340DA /* GoogleService-Info.plist */; };
+		E4C1A8F1000A502DAF35CB46 /* Pods_GoldenRuleIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10B7C60E0C8C86B13E67DDF3 /* Pods-GoldenRuleIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenRuleIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6CA4E69EC7490923558216 /* Pods-GoldenRuleIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5198516E05A53C50A477827B /* Pods-GoldenRuleIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenRuleIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF20494393C0096691BCFD5 /* Pods_GoldenRuleIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenRuleIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBBF67A1F97E41A2614D422 /* Pods-GoldenRuleIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6CD9B377A40A5A073DCF0445 /* Pods-GoldenRuleIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS.release.xcconfig"; sourceTree = "<group>"; };
 		A91ED3101FF42AA500AF1EB8 /* GoldenRuleIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenRuleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A91ED3151FF42AA500AF1EB8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +61,8 @@
 		A91ED3311FF42AA500AF1EB8 /* GoldenRuleIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldenRuleIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenRuleIOSUITests.swift; sourceTree = "<group>"; };
 		A91ED3371FF42AA500AF1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD3E5D2F2036486D00E340DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A778724A2E9DEAB188EAE0 /* Pods_GoldenRuleIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +86,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C1A8F1000A502DAF35CB46 /* Pods_GoldenRuleIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EC2B07F583BCB8DDCE6F09C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CF20494393C0096691BCFD5 /* Pods_GoldenRuleIOS.framework */,
+				1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */,
+				5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A06D0260C11C137C4E1AD89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FBBF67A1F97E41A2614D422 /* Pods-GoldenRuleIOS.debug.xcconfig */,
+				6CD9B377A40A5A073DCF0445 /* Pods-GoldenRuleIOS.release.xcconfig */,
+				AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */,
+				1F6CA4E69EC7490923558216 /* Pods-GoldenRuleIOSTests.release.xcconfig */,
+				10B7C60E0C8C86B13E67DDF3 /* Pods-GoldenRuleIOSUITests.debug.xcconfig */,
+				5198516E05A53C50A477827B /* Pods-GoldenRuleIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A91ED3071FF42AA500AF1EB8 = {
 			isa = PBXGroup;
 			children = (
+				DD3E5D2F2036486D00E340DA /* GoogleService-Info.plist */,
 				A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */,
 				A91ED3291FF42AA500AF1EB8 /* GoldenRuleIOSTests */,
 				A91ED3341FF42AA500AF1EB8 /* GoldenRuleIOSUITests */,
 				A91ED3111FF42AA500AF1EB8 /* Products */,
+				6A06D0260C11C137C4E1AD89 /* Pods */,
+				2EC2B07F583BCB8DDCE6F09C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A91ED33A1FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "GoldenRuleIOS" */;
 			buildPhases = (
+				AEB45BE30329CFB301E2D742 /* [CP] Check Pods Manifest.lock */,
 				A91ED30C1FF42AA500AF1EB8 /* Sources */,
 				A91ED30D1FF42AA500AF1EB8 /* Frameworks */,
 				A91ED30E1FF42AA500AF1EB8 /* Resources */,
+				6DE0367FFB7A8FBABA934747 /* [CP] Embed Pods Frameworks */,
+				B5DC6B5097891F145D5A754D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A91ED33D1FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "GoldenRuleIOSTests" */;
 			buildPhases = (
+				DC890D7F49B2C29ED007676A /* [CP] Check Pods Manifest.lock */,
 				A91ED3221FF42AA500AF1EB8 /* Sources */,
 				A91ED3231FF42AA500AF1EB8 /* Frameworks */,
 				A91ED3241FF42AA500AF1EB8 /* Resources */,
+				E1676732C75DD12B83260667 /* [CP] Embed Pods Frameworks */,
+				2A0BF777B309ACE55B277D41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A91ED3401FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "GoldenRuleIOSUITests" */;
 			buildPhases = (
+				ED57050DCA732D9E2867A932 /* [CP] Check Pods Manifest.lock */,
 				A91ED32D1FF42AA500AF1EB8 /* Sources */,
 				A91ED32E1FF42AA500AF1EB8 /* Frameworks */,
 				A91ED32F1FF42AA500AF1EB8 /* Resources */,
+				B7EEDB600798BB561C14138E /* [CP] Embed Pods Frameworks */,
+				025F1AA20CB97D13BF30F5C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91ED3201FF42AA500AF1EB8 /* LaunchScreen.storyboard in Resources */,
+				DD3E5D302036486E00E340DA /* GoogleService-Info.plist in Resources */,
 				A91ED31D1FF42AA500AF1EB8 /* Assets.xcassets in Resources */,
 				A91ED31B1FF42AA500AF1EB8 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +317,205 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		025F1AA20CB97D13BF30F5C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A0BF777B309ACE55B277D41 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE0367FFB7A8FBABA934747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB45BE30329CFB301E2D742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldenRuleIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5DC6B5097891F145D5A754D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7EEDB600798BB561C14138E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC890D7F49B2C29ED007676A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldenRuleIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1676732C75DD12B83260667 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED57050DCA732D9E2867A932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldenRuleIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A91ED30C1FF42AA500AF1EB8 /* Sources */ = {
@@ -436,6 +688,7 @@
 		};
 		A91ED33B1FF42AA600AF1EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FBBF67A1F97E41A2614D422 /* Pods-GoldenRuleIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -443,7 +696,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoldenRuleIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GoldenRuleIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldenrule.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -453,6 +706,7 @@
 		};
 		A91ED33C1FF42AA600AF1EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD9B377A40A5A073DCF0445 /* Pods-GoldenRuleIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -460,7 +714,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = GoldenRuleIOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.GoldenRuleIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldenrule.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -470,6 +724,7 @@
 		};
 		A91ED33E1FF42AA600AF1EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +741,7 @@
 		};
 		A91ED33F1FF42AA600AF1EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6CA4E69EC7490923558216 /* Pods-GoldenRuleIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +758,7 @@
 		};
 		A91ED3411FF42AA600AF1EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B7C60E0C8C86B13E67DDF3 /* Pods-GoldenRuleIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +774,7 @@
 		};
 		A91ED3421FF42AA600AF1EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5198516E05A53C50A477827B /* Pods-GoldenRuleIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

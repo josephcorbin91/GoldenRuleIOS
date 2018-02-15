@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class SecondViewController: UIViewController {
 
     var handle: AuthStateDidChangeListenerHandle?
@@ -42,7 +42,7 @@ class SecondViewController: UIViewController {
     
     // [START create_user]
     func createUser(){
-              Auth.auth().createUser(withEmail: 'joseph.ios@ca.com', password: 'ulc212976') { (user, error) in
+        Auth.auth().createUser(withEmail: "joseph.ios@ca.com", password: "ulc212976") { (user, error) in
                 
               }
     }
