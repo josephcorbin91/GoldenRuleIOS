@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,6 +29,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     }
+
+   
+      func application(_ application: UIApplication, didFinishLaunchingWithOptions
+      launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    // [START firebase_configure]
+    // Use Firebase library to configure APIs
+    FirebaseApp.configure()
+    // [END firebase_configure]
+          return true;
+      }
+    
+    
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
