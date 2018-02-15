@@ -34,28 +34,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj8-1s-1zK">
-                                <rect key="frame" x="54" y="569" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj8-1s-1zK">
+                                <rect key="frame" x="20" y="557" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="9MP-fv-equ"/>
+                                    <constraint firstAttribute="height" constant="60" id="Xd0-Gl-jgo"/>
+                                    <constraint firstAttribute="width" constant="60" id="Xid-QV-2Nk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="aRT-B7-LLG"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="InfoIcon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B0-kd-PXz">
-                                <rect key="frame" x="108" y="569" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBf-bE-DH0">
+                                <rect key="frame" x="215" y="557" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BPX-Px-3j8"/>
+                                    <constraint firstAttribute="height" constant="60" id="o9e-sP-XkO"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="LocationIcon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBf-bE-DH0">
-                                <rect key="frame" x="162" y="569" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-oI-4Mb">
+                                <rect key="frame" x="295" y="567" width="60" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3xf-vV-Rdq"/>
+                                    <constraint firstAttribute="height" constant="50" id="UN7-KW-sC4"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MessageIcon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-oI-4Mb">
-                                <rect key="frame" x="205" y="568" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B0-kd-PXz">
+                                <rect key="frame" x="100" y="557" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="hUM-bm-1an"/>
+                                    <constraint firstAttribute="height" constant="60" id="jMJ-KW-Y1g"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="SettingsIcon"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="1B0-kd-PXz" secondAttribute="bottom" constant="50" id="8TR-pG-jX8"/>
+                            <constraint firstAttribute="bottom" secondItem="TBf-bE-DH0" secondAttribute="bottom" constant="50" id="8v4-x0-ygd"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Vj8-1s-1zK" secondAttribute="bottom" constant="50" id="AJZ-R4-Jf6"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="iWm-oI-4Mb" secondAttribute="trailing" constant="20" id="Hwe-Zj-3is"/>
+                            <constraint firstItem="Vj8-1s-1zK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="ISA-qU-mCt"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="iWm-oI-4Mb" secondAttribute="trailing" constant="20" id="IVl-E7-Bv7"/>
+                            <constraint firstItem="iWm-oI-4Mb" firstAttribute="leading" secondItem="TBf-bE-DH0" secondAttribute="trailing" constant="20" id="Jov-zA-CdV"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Vj8-1s-1zK" secondAttribute="bottom" constant="50" id="NKM-em-hSn"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="iWm-oI-4Mb" secondAttribute="bottom" constant="50" id="VcI-Kk-EQn"/>
+                            <constraint firstItem="1B0-kd-PXz" firstAttribute="leading" secondItem="Vj8-1s-1zK" secondAttribute="trailing" constant="20" id="eQO-oX-QXx"/>
+                            <constraint firstItem="Vj8-1s-1zK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="o1r-yr-Nx1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
@@ -73,6 +100,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="InfoIcon" width="172" height="220"/>
+        <image name="LocationIcon" width="215" height="216"/>
+        <image name="MessageIcon" width="247" height="230"/>
+        <image name="SettingsIcon" width="228" height="231"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>
