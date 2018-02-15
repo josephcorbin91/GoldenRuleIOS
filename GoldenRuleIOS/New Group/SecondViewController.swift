@@ -10,9 +10,10 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var SignInButton: UIButton!
+    @IBOutlet weak var CreateAccountButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -99,9 +99,8 @@
 		A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */ = {
 			isa = PBXGroup;
 			children = (
+				DD2E61EB20363F3C00194A9B /* New Group */,
 				A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */,
-				A91ED3151FF42AA500AF1EB8 /* FirstViewController.swift */,
-				A91ED3171FF42AA500AF1EB8 /* SecondViewController.swift */,
 				A91ED3191FF42AA500AF1EB8 /* Main.storyboard */,
 				A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */,
 				A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */,
@@ -126,6 +125,15 @@
 				A91ED3371FF42AA500AF1EB8 /* Info.plist */,
 			);
 			path = GoldenRuleIOSUITests;
+			sourceTree = "<group>";
+		};
+		DD2E61EB20363F3C00194A9B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				A91ED3151FF42AA500AF1EB8 /* FirstViewController.swift */,
+				A91ED3171FF42AA500AF1EB8 /* SecondViewController.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
