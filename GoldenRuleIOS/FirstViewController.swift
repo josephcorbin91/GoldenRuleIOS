@@ -58,17 +58,6 @@ task.resume()
         super.viewDidLoad()
 	    makeRestCall()
 
-	let infoButton = UIButton(type: .custom)
-	infoButton.setImage(UIImage(named: "InfoButton.png"), for: .normal)
-        
-	let settingsButton = UIButton(type: .custom)
-	settingsButton.setImage(UIImage(named: "Settings.png"), for: .normal)
-        
-	let locatorButton = UIButton(type: .custom)
-	locatorButton.setImage(UIImage(named: "LocationIco.png"), for: .normal)
-        
-	let messageButton = UIButton(type: .custom)
-	messageButton.setImage(UIImage(named: "messageicon.png"), for: .normal)
         
 	self.view.addBackground()
 	    
