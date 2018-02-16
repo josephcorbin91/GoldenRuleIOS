@@ -28,7 +28,10 @@ class SecondViewController: UIViewController {
   }
     
     
-  override func viewWillDisappear(_ animated: Bool) {
+    @IBAction func createAccount(_ sender: Any) {
+        createUser()
+    }
+    override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     // [START remove_auth_listener]
     Auth.auth().removeStateDidChangeListener(handle!)
