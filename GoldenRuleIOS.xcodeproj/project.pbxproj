@@ -9,15 +9,17 @@
 /* Begin PBXBuildFile section */
 		92A778724A2E9DEAB188EAE0 /* Pods_GoldenRuleIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF20494393C0096691BCFD5 /* Pods_GoldenRuleIOS.framework */; };
 		A91ED3141FF42AA500AF1EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */; };
-		A91ED3161FF42AA500AF1EB8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3151FF42AA500AF1EB8 /* FirstViewController.swift */; };
-		A91ED3181FF42AA500AF1EB8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3171FF42AA500AF1EB8 /* SecondViewController.swift */; };
 		A91ED31B1FF42AA500AF1EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED3191FF42AA500AF1EB8 /* Main.storyboard */; };
 		A91ED31D1FF42AA500AF1EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */; };
 		A91ED3201FF42AA500AF1EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */; };
 		A91ED32B1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED32A1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift */; };
 		A91ED3361FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */; };
 		D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */; };
-		DD3E5D302036486E00E340DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD3E5D2F2036486D00E340DA /* GoogleService-Info.plist */; };
+		DDF68D6F2065A9C500C2C595 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */; };
+		DDF68D712065A9DA00C2C595 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D702065A9DA00C2C595 /* InfoViewController.swift */; };
+		DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D722065A9F100C2C595 /* SettingsViewController.swift */; };
+		DDF68D752065B6D200C2C595 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDF68D742065B6D200C2C595 /* GoogleService-Info.plist */; };
+		DDF68D772065B74100C2C595 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D762065B74100C2C595 /* HomeViewController.swift */; };
 		E4C1A8F1000A502DAF35CB46 /* Pods_GoldenRuleIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,8 +51,6 @@
 		6CD9B377A40A5A073DCF0445 /* Pods-GoldenRuleIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS.release.xcconfig"; sourceTree = "<group>"; };
 		A91ED3101FF42AA500AF1EB8 /* GoldenRuleIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenRuleIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A91ED3151FF42AA500AF1EB8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A91ED3171FF42AA500AF1EB8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A91ED31A1FF42AA500AF1EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A91ED31F1FF42AA500AF1EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,11 @@
 		A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenRuleIOSUITests.swift; sourceTree = "<group>"; };
 		A91ED3371FF42AA500AF1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DD3E5D2F2036486D00E340DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		DDF68D702065A9DA00C2C595 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		DDF68D722065A9F100C2C595 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DDF68D742065B6D200C2C595 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../.Trash/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDF68D762065B74100C2C595 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,17 +118,17 @@
 				5198516E05A53C50A477827B /* Pods-GoldenRuleIOSUITests.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		A91ED3071FF42AA500AF1EB8 = {
 			isa = PBXGroup;
 			children = (
-				DD3E5D2F2036486D00E340DA /* GoogleService-Info.plist */,
+				DDF68D742065B6D200C2C595 /* GoogleService-Info.plist */,
 				A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */,
 				A91ED3291FF42AA500AF1EB8 /* GoldenRuleIOSTests */,
 				A91ED3341FF42AA500AF1EB8 /* GoldenRuleIOSUITests */,
 				A91ED3111FF42AA500AF1EB8 /* Products */,
-				6A06D0260C11C137C4E1AD89 /* Pods */,
 				2EC2B07F583BCB8DDCE6F09C /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -142,12 +146,16 @@
 		A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */ = {
 			isa = PBXGroup;
 			children = (
-				DD2E61EB20363F3C00194A9B /* New Group */,
+				DDF68D722065A9F100C2C595 /* SettingsViewController.swift */,
 				A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */,
 				A91ED3191FF42AA500AF1EB8 /* Main.storyboard */,
 				A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */,
+				6A06D0260C11C137C4E1AD89 /* Pods */,
 				A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */,
 				A91ED3211FF42AA500AF1EB8 /* Info.plist */,
+				DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */,
+				DDF68D702065A9DA00C2C595 /* InfoViewController.swift */,
+				DDF68D762065B74100C2C595 /* HomeViewController.swift */,
 			);
 			path = GoldenRuleIOS;
 			sourceTree = "<group>";
@@ -168,15 +176,6 @@
 				A91ED3371FF42AA500AF1EB8 /* Info.plist */,
 			);
 			path = GoldenRuleIOSUITests;
-			sourceTree = "<group>";
-		};
-		DD2E61EB20363F3C00194A9B /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				A91ED3151FF42AA500AF1EB8 /* FirstViewController.swift */,
-				A91ED3171FF42AA500AF1EB8 /* SecondViewController.swift */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91ED3201FF42AA500AF1EB8 /* LaunchScreen.storyboard in Resources */,
-				DD3E5D302036486E00E340DA /* GoogleService-Info.plist in Resources */,
+				DDF68D752065B6D200C2C595 /* GoogleService-Info.plist in Resources */,
 				A91ED31D1FF42AA500AF1EB8 /* Assets.xcassets in Resources */,
 				A91ED31B1FF42AA500AF1EB8 /* Main.storyboard in Resources */,
 			);
@@ -522,9 +521,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91ED3181FF42AA500AF1EB8 /* SecondViewController.swift in Sources */,
+				DDF68D772065B74100C2C595 /* HomeViewController.swift in Sources */,
 				A91ED3141FF42AA500AF1EB8 /* AppDelegate.swift in Sources */,
-				A91ED3161FF42AA500AF1EB8 /* FirstViewController.swift in Sources */,
+				DDF68D712065A9DA00C2C595 /* InfoViewController.swift in Sources */,
+				DDF68D6F2065A9C500C2C595 /* NewsViewController.swift in Sources */,
+				DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

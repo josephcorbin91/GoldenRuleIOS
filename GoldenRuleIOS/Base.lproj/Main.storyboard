@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TtN-DC-Vv1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,166 +10,104 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="7ZK-sQ-7eH">
+        <!--Info View Controller-->
+        <scene sceneID="Q42-CW-bPK">
             <objects>
-                <navigationController id="TtN-DC-Vv1" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GDD-tJ-JZK">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="UjX-FT-Qqt" kind="relationship" relationship="rootViewController" id="GWD-aQ-Kag"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3T3-JS-Zsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="u56-KQ-Hak" customClass="InfoViewController" customModule="GoldenRuleIOS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hEB-V8-ga8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="szg-bv-rIS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MyU-XY-ugP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="-1201"/>
+            <point key="canvasLocation" x="-241" y="382"/>
+        </scene>
+        <!--Settingsview Controller-->
+        <scene sceneID="U7H-4O-WBc">
+            <objects>
+                <viewController id="OJg-BF-j3L" customClass="SettingsviewController" customModule="GoldenRuleIOS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="erk-j6-0Df">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="WgJ-zb-FwC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6L-Te-1Ff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen" id="dYP-Se-LWy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="809" y="418"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="q9q-5J-Xby">
+            <objects>
+                <viewController id="dFF-Oo-zMe" customClass="NewsViewController" customModule="GoldenRuleIOS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="96l-sw-QJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8gP-Is-QSc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yW-Rf-dXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="400"/>
         </scene>
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="GoldenRuleIOS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vj8-1s-1zK">
-                                <rect key="frame" x="20" y="557" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="9MP-fv-equ"/>
-                                    <constraint firstAttribute="height" constant="60" id="Xd0-Gl-jgo"/>
-                                    <constraint firstAttribute="width" constant="60" id="Xid-QV-2Nk"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="aRT-B7-LLG"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="InfoIcon"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBf-bE-DH0">
-                                <rect key="frame" x="215" y="557" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="cte-iB-zOV"/>
-                                    <constraint firstAttribute="width" constant="60" id="teW-tk-ANm"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="LocationIcon"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-oI-4Mb">
-                                <rect key="frame" x="295" y="557" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="SzU-O4-076"/>
-                                    <constraint firstAttribute="width" constant="60" id="lal-Xm-mOa"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="MessageIcon"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KU-U3U">
+                                <rect key="frame" x="279" y="547" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="message"/>
                                 <connections>
-                                    <segue destination="cui-5w-MnH" kind="presentation" id="8Dr-xo-p5J"/>
+                                    <segue destination="dFF-Oo-zMe" kind="show" id="TGK-57-gvA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1B0-kd-PXz">
-                                <rect key="frame" x="100" y="557" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="hUM-bm-1an"/>
-                                    <constraint firstAttribute="height" constant="60" id="jMJ-KW-Y1g"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="SettingsIcon"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yx7-eH-Bdj">
+                                <rect key="frame" x="74" y="547" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="settings"/>
+                                <connections>
+                                    <segue destination="OJg-BF-j3L" kind="show" id="ZR8-Ld-Zv8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ti7-Pg-P1T">
+                                <rect key="frame" x="-14" y="547" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="info"/>
+                                <connections>
+                                    <segue destination="u56-KQ-Hak" kind="show" id="pLc-3h-MfQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="1B0-kd-PXz" secondAttribute="bottom" constant="50" id="8TR-pG-jX8"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Vj8-1s-1zK" secondAttribute="bottom" constant="50" id="AJZ-R4-Jf6"/>
-                            <constraint firstItem="Vj8-1s-1zK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="ISA-qU-mCt"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Vj8-1s-1zK" secondAttribute="bottom" constant="50" id="NKM-em-hSn"/>
-                            <constraint firstItem="iWm-oI-4Mb" firstAttribute="leading" secondItem="TBf-bE-DH0" secondAttribute="trailing" constant="20" id="NbB-Nw-38p"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="iWm-oI-4Mb" secondAttribute="bottom" constant="50" id="OYb-BA-fNB"/>
-                            <constraint firstItem="1B0-kd-PXz" firstAttribute="leading" secondItem="Vj8-1s-1zK" secondAttribute="trailing" constant="20" id="eQO-oX-QXx"/>
-                            <constraint firstItem="Vj8-1s-1zK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="20" id="o1r-yr-Nx1"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="iWm-oI-4Mb" secondAttribute="trailing" constant="20" id="pjf-Sw-2lU"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="TBf-bE-DH0" secondAttribute="bottom" constant="50" id="t3Q-4f-16Y"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="Zxx-Mf-ph7"/>
-                    <connections>
-                        <outlet property="InfoButton" destination="Vj8-1s-1zK" id="Byj-MG-Cvs"/>
-                        <outlet property="Locator" destination="TBf-bE-DH0" id="IY2-8I-TD3"/>
-                        <outlet property="Message" destination="iWm-oI-4Mb" id="itm-8B-j3l"/>
-                        <outlet property="SetttingsButton" destination="1B0-kd-PXz" id="jEw-pB-okY"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="DNr-F7-CxE">
-            <objects>
-                <viewController id="cui-5w-MnH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TNo-D6-8cK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="cr0-lz-Ldc"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fhf-W2-urU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1462" y="-338"/>
-        </scene>
-        <!--Second View Controller-->
-        <scene sceneID="Z8F-Vx-92s">
-            <objects>
-                <viewController id="UjX-FT-Qqt" customClass="SecondViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5JI-Hb-MzW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen" translatesAutoresizingMaskIntoConstraints="NO" id="dYP-Se-LWy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crx-Cf-OXE">
-                                <rect key="frame" x="137" y="512" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign In">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGs-ep-Lkd">
-                                <rect key="frame" x="127" y="570" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Create Account">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="createAccount:" destination="UjX-FT-Qqt" eventType="touchDown" id="kBu-QP-HyC"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="dYP-Se-LWy" firstAttribute="bottom" secondItem="M8J-fC-TGm" secondAttribute="bottom" id="BOu-Ot-cfc"/>
-                            <constraint firstItem="dYP-Se-LWy" firstAttribute="top" secondItem="5JI-Hb-MzW" secondAttribute="top" id="Ksp-8u-Z3Q"/>
-                            <constraint firstItem="dYP-Se-LWy" firstAttribute="trailing" secondItem="M8J-fC-TGm" secondAttribute="trailing" id="jBD-ya-jin"/>
-                            <constraint firstItem="dYP-Se-LWy" firstAttribute="leading" secondItem="M8J-fC-TGm" secondAttribute="leading" id="mxv-Xd-ubi"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="M8J-fC-TGm"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="sjm-Tr-ilD"/>
-                    <connections>
-                        <outlet property="CreateAccountButton" destination="eGs-ep-Lkd" id="4Ag-uz-d6n"/>
-                        <outlet property="SignInButton" destination="crx-Cf-OXE" id="jxy-cx-HsQ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a52-xJ-duX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1620" y="-1201"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="InfoIcon" width="172" height="220"/>
-        <image name="LocationIcon" width="215" height="216"/>
-        <image name="MessageIcon" width="247" height="230"/>
-        <image name="SettingsIcon" width="228" height="231"/>
         <image name="first" width="30" height="30"/>
+        <image name="info" width="172" height="172"/>
+        <image name="message" width="172" height="172"/>
+        <image name="settings" width="172" height="172"/>
         <image name="splash_screen" width="1440" height="2560"/>
     </resources>
 </document>
