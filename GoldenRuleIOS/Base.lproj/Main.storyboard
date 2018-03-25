@@ -17,7 +17,34 @@
                     <view key="view" contentMode="scaleToFill" id="hEB-V8-ga8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHX-r4-6nj">
+                                <rect key="frame" x="166" y="176" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please visit our website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-Ce-6H7">
+                                <rect key="frame" x="166" y="221" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.46225377086915387" green="0.92010052743027992" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-wH-e5r">
+                                <rect key="frame" x="135" y="517" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BTL-yZ-6SF"/>
+                                    <constraint firstAttribute="height" constant="100" id="p0K-Zy-JHL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="settings_back_image"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="bottom" secondItem="yX5-wH-e5r" secondAttribute="bottom" constant="50" id="vtq-7n-ID2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="szg-bv-rIS"/>
                     </view>
                 </viewController>
@@ -32,7 +59,27 @@
                     <view key="view" contentMode="scaleToFill" id="erk-j6-0Df">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anP-cQ-oCm">
+                                <rect key="frame" x="134" y="517" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Mqp-Vy-cfr"/>
+                                    <constraint firstAttribute="height" constant="100" id="koz-C9-EFV"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="settings_back_image"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBj-jE-Qeg">
+                                <rect key="frame" x="13" y="406" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WgJ-zb-FwC" firstAttribute="bottom" secondItem="anP-cQ-oCm" secondAttribute="bottom" constant="50" id="717-LY-wJu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WgJ-zb-FwC"/>
                     </view>
                 </viewController>
@@ -51,7 +98,20 @@
                     <view key="view" contentMode="scaleToFill" id="96l-sw-QJ0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umm-kb-Aae">
+                                <rect key="frame" x="135" y="517" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="MUP-y2-Poh"/>
+                                    <constraint firstAttribute="width" constant="100" id="muM-TN-NQL"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="settings_back_image"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8gP-Is-QSc" firstAttribute="bottom" secondItem="umm-kb-Aae" secondAttribute="bottom" constant="50" id="dHv-pK-XP7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8gP-Is-QSc"/>
                     </view>
                 </viewController>
@@ -108,6 +168,7 @@
         <image name="info" width="172" height="172"/>
         <image name="message" width="172" height="172"/>
         <image name="settings" width="172" height="172"/>
+        <image name="settings_back_image" width="244" height="244"/>
         <image name="splash_screen" width="1440" height="2560"/>
     </resources>
 </document>
