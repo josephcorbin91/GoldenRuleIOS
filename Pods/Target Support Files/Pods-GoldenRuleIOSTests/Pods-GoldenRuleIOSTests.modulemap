@@ -1,0 +1,6 @@
+framework module Pods_GoldenRuleIOSTests {
+  umbrella header "Pods-GoldenRuleIOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

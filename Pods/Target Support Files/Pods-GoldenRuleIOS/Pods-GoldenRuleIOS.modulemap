@@ -1,0 +1,6 @@
+framework module Pods_GoldenRuleIOS {
+  umbrella header "Pods-GoldenRuleIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

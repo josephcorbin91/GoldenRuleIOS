@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenRuleIOS/InfoViewController.swift"
+            timestampString = "543718426.654963"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.__deallocating_deinit"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553761.572606"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; GoldenRuleIOS.InfoViewController"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553761.577332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; GoldenRuleIOS.InfoViewController"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553761.582294"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "283">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;GoldenRuleIOS.InfoViewController&gt;"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553761.588667"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;GoldenRuleIOS.InfoViewController&gt;"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553761.593989"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoldenRuleIOS/InfoViewController.swift"
+            timestampString = "543718426.655485"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.__deallocating_deinit"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553770.533002"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; GoldenRuleIOS.InfoViewController"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553770.5368381"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; GoldenRuleIOS.InfoViewController"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553770.5398329"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "283">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;GoldenRuleIOS.InfoViewController&gt;"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553770.542812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoldenRuleIOS.InfoViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;GoldenRuleIOS.InfoViewController&gt;"
+                  moduleName = "GoldenRuleIOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/InfoViewController.swift"
+                  timestampString = "543553770.5456229"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
