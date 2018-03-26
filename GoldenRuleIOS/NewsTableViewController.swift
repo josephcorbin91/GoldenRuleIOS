@@ -41,7 +41,9 @@ class NewsTableViewController: UITableViewController {
         
     }
     
+    var fetchedResultsController: NSFetchedResultsController<NSFetchRequestResult>
     
+   
     override func viewWillAppear(_ animated: Bool) {
          self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
