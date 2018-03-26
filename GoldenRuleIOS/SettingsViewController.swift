@@ -18,17 +18,17 @@ class SettingsViewController: UIViewController {
     @IBAction func SoundChime(_ sender: Any) {
         if SoundChime.isOn{
             UserDefaults.standard.set(true, forKey: "SoundChime") //Bool
-            print("SoundChime"+UserDefaults.standard.bool(forKey: "SoundChime"))
+            print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
 
 
         }else{
                         UserDefaults.standard.set(false, forKey: "SoundChime") //Bool
-            print("SoundChime"+UserDefaults.standard.bool(forKey: "SoundChime"))
+            print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
 
 
         }
     
-}
+
     }
     @IBAction func SoundMusic(_ sender: Any) {
     }
