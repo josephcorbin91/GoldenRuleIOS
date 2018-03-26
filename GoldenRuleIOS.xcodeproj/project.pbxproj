@@ -16,6 +16,7 @@
 		A91ED3361FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */; };
 		D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */; };
 		DD1E294A2069651800A6ACDD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD1E29482069651800A6ACDD /* Model.xcdatamodeld */; };
+		DD20F210206999CA00056FE7 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20F20F206999CA00056FE7 /* NewsTableViewController.swift */; };
 		DD7306A72068C0E200941331 /* fur_elise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD7306A62068C0E200941331 /* fur_elise.mp3 */; };
 		DD7306A92068C0ED00941331 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD7306A82068C0ED00941331 /* chime.mp3 */; };
 		DDE3B52C2068AE9F008A2880 /* golden_rule_intro_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DDE3B52B2068AE9F008A2880 /* golden_rule_intro_video.mp4 */; };
@@ -72,6 +73,7 @@
 		A91ED3371FF42AA500AF1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD1E29492069651800A6ACDD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DD20F20F206999CA00056FE7 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		DD7306A62068C0E200941331 /* fur_elise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fur_elise.mp3; path = ../../../Downloads/fur_elise.mp3; sourceTree = "<group>"; };
 		DD7306A82068C0ED00941331 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chime.mp3; path = ../../../Downloads/chime.mp3; sourceTree = "<group>"; };
 		DDE3B52B2068AE9F008A2880 /* golden_rule_intro_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = golden_rule_intro_video.mp4; path = ../../../Downloads/golden_rule_intro_video.mp4; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */,
 				DDF68D702065A9DA00C2C595 /* InfoViewController.swift */,
 				DDF68D762065B74100C2C595 /* HomeViewController.swift */,
+				DD20F20F206999CA00056FE7 /* NewsTableViewController.swift */,
 			);
 			path = GoldenRuleIOS;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 				DDF68D712065A9DA00C2C595 /* InfoViewController.swift in Sources */,
 				DDF68D6F2065A9C500C2C595 /* NewsViewController.swift in Sources */,
 				DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */,
+				DD20F210206999CA00056FE7 /* NewsTableViewController.swift in Sources */,
 				DD1E294A2069651800A6ACDD /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

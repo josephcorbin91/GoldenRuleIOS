@@ -3,7 +3,7 @@
 //  GoldenRuleIOS
 //
 //  Created by user132771 on 3/23/18.
-//  Copyright © 2018 JohnTuttle. All rights reserved.
+//  Copyright
 //
 
 import UIKit
