@@ -16,7 +16,19 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var VibrationsSwitch: UISwitch!
     @IBOutlet weak var SponsorSwitch: UISwitch!
     @IBAction func SoundChime(_ sender: Any) {
-        
+        if SoundChime.isOn{
+            UserDefaults.standard.set(true, forKey: "SoundChime") //Bool
+            print("SoundChime"+UserDefaults.standard.bool(forKey: "SoundChime"))
+
+
+        }else{
+                        UserDefaults.standard.set(false, forKey: "SoundChime") //Bool
+            print("SoundChime"+UserDefaults.standard.bool(forKey: "SoundChime"))
+
+
+        }
+    
+}
     }
     @IBAction func SoundMusic(_ sender: Any) {
     }
