@@ -7,9 +7,70 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class SettingsViewController: UIViewController {
+var player: AVAudioPlayer?
 
+    
+    func playSoundChime(){
+         guard let url = Bundle.main.url(forResource: "soundChime", withExtension: "mp3") else { return }
+
+    do {
+        try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        try AVAudioSession.sharedInstance().setActive(true)
+
+
+
+        /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+        player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+        /* iOS 10 and earlier require the following line:
+        player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+        guard let player = player else { return }
+
+        player.play()
+
+    } catch let error {
+        print(error.localizedDescription)
+    }
+    }
+     func stopSoundChime(){
+        
+    }
+    func playSoundMusic(){
+         guard let url = Bundle.main.url(forResource: "soundMusic", withExtension: "mp3") else { return }
+
+    do {
+        try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        try AVAudioSession.sharedInstance().setActive(true)
+
+
+
+        /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+        player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+        /* iOS 10 and earlier require the following line:
+        player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+        guard let player = player else { return }
+
+        player.play()
+
+    } catch let error {
+        print(error.localizedDescription)
+    }
+        
+    }
+     func stopSoundMusic(){
+        
+    }
+    func vibrate(){
+                AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))            
+
+    }
     @IBOutlet weak var SoundChime: UISwitch!
     @IBOutlet weak var SoundMusic: UISwitch!
     @IBOutlet weak var OnScreenNotificationsSwitch: UISwitch!
@@ -19,11 +80,13 @@ class SettingsViewController: UIViewController {
         if SoundChime.isOn{
             UserDefaults.standard.set(true, forKey: "SoundChime") //Bool
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
+playSoundMusic()
 
 
         }else{
                         UserDefaults.standard.set(false, forKey: "SoundChime") //Bool
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
+soptSoundMusic()
 
 
         }
@@ -31,6 +94,17 @@ class SettingsViewController: UIViewController {
 
     }
     @IBAction func SoundMusic(_ sender: Any) {
+         if SoundMusic.isOn{
+            UserDefaults.standard.set(true, forKey: "SoundMusic") //Bool
+            print("SoundMusic "+String(UserDefaults.standard.bool(forKey: "SoundMusic")))
+
+playSoundMusic()
+        }else{
+                        UserDefaults.standard.set(false, forKey: "SoundMusic") //Bool
+            print("SoundMusic "+String(UserDefaults.standard.bool(forKey: "SoundMusic")))
+soptSoundMusic()
+
+        }
     }
     @IBAction func Vibrations(_ sender: Any) {
     }
