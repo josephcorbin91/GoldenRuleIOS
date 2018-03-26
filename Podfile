@@ -6,6 +6,9 @@ target 'GoldenRuleIOS' do
   use_frameworks!
   pod ‘Firebase/Core’ 
   pod ‘Firebase/Auth’ 
+  pod ‘MobilePlayer’
+  pod ‘Player’, ‘~> 0.8.0’
+
   pod ‘FirebaseUI’ 
 
 
