@@ -7,11 +7,10 @@
 //
 
 import UIKit
-include UserNotifications
+import UserNotifications
 
-var notificationGranted=false
 class HomeViewController: UIViewController {
-
+    var notificationGranted=false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,12 +35,12 @@ class HomeViewController: UIViewController {
             
         }
 
-            if notificationGranted{
-            repeatNotification()
+            if self.notificationGranted{
+                self.repeatNotification()
             }  
         // Do any additional setup after loading the view.
     }
-
+    }
          func repeatNotification(){
              
              var dateComponents = DateComponents()
@@ -67,6 +66,7 @@ UNUserNotificationCenter.current().add(request) { (error) in
 print("added notification:\(request.identifier)")
 
             }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
