@@ -15,7 +15,7 @@ var player: AVAudioPlayer?
 
     
     func playSoundChime(){
-         guard let url = Bundle.main.url(forResource: "soundChime", withExtension: "mp3") else { return }
+         guard let url = Bundle.main.url(forResource: "chime", withExtension: "mp3") else { return }
 
     do {
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -41,7 +41,7 @@ var player: AVAudioPlayer?
         
     }
     func playSoundMusic(){
-         guard let url = Bundle.main.url(forResource: "soundMusic", withExtension: "mp3") else { return }
+         guard let url = Bundle.main.url(forResource: "fur_elise", withExtension: "mp3") else { return }
 
     do {
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -86,7 +86,7 @@ playSoundMusic()
         }else{
                         UserDefaults.standard.set(false, forKey: "SoundChime") //Bool
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
-soptSoundMusic()
+stopSoundMusic()
 
 
         }
@@ -102,7 +102,7 @@ playSoundMusic()
         }else{
                         UserDefaults.standard.set(false, forKey: "SoundMusic") //Bool
             print("SoundMusic "+String(UserDefaults.standard.bool(forKey: "SoundMusic")))
-soptSoundMusic()
+stopSoundMusic()
 
         }
     }
