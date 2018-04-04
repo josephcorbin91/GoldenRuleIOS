@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,16 +15,9 @@
             <objects>
                 <viewController id="u56-KQ-Hak" customClass="InfoViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hEB-V8-ga8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please visit our website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-Ce-6H7">
-                                <rect key="frame" x="16" y="20" width="343" height="156"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.46225377086915387" green="0.92010052743027992" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHX-r4-6nj">
                                 <rect key="frame" x="-1290" y="323" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,40 +28,87 @@ Please visit GoldenRuleReminder.com</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-wH-e5r">
-                                <rect key="frame" x="137" y="547" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="settings_back_image"/>
-                                <connections>
-                                    <segue destination="9pv-A4-QxB" kind="show" id="Hxg-xo-9P3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYb-5O-NY3">
-                                <rect key="frame" x="87" y="299" width="200" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYb-5O-NY3">
+                                <rect key="frame" x="30" y="328" width="260" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="gCb-oK-Ars"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="video_image"/>
                                 <connections>
                                     <action selector="ImageButton:" destination="u56-KQ-Hak" eventType="touchUpInside" id="L7D-Bm-fyo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-wH-e5r">
+                                <rect key="frame" x="140" y="508" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0Bh-uA-ZZV"/>
+                                    <constraint firstAttribute="height" constant="40" id="JMf-vy-9R3"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="settings_back_image"/>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="Hxg-xo-9P3"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSF-Vk-DuO">
+                                <rect key="frame" x="46.5" y="259.5" width="227" height="53.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please visit     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-pK-ZYM">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="53.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GoldenRuleReminder.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfo-Vd-bHL">
+                                        <rect key="frame" x="81" y="0.0" width="146" height="53.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.21923626243985384" green="0.82941342684591612" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-Ce-6H7">
+                                <rect key="frame" x="30" y="50" width="260" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="gpe-kE-9uW"/>
+                                </constraints>
+                                <string key="text">The goal of our Golden Rule App™ is to draw attention to the Golden Rule and to world peace – daily. On a planet with so much disharmony, it’s clear that this uniting ethic has been under taught, under publicized, and very often forgotten. So, we have developed a reminder, delivered and connecting people in a unique way, at 1234pm. You can help by using it and telling friends, family, and group leaders. Or, just show them the video below!
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UYb-5O-NY3" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="30" id="0BB-U5-94V"/>
+                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="30" id="9nt-fj-qxn"/>
+                            <constraint firstItem="UYb-5O-NY3" firstAttribute="top" secondItem="LSF-Vk-DuO" secondAttribute="bottom" constant="15" id="Ofb-Vl-3Xf"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="QE5-eW-Db9"/>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="bottom" secondItem="yX5-wH-e5r" secondAttribute="bottom" constant="20" id="WkP-I4-tyh"/>
+                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="30" id="Y3R-R4-ohj"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="top" secondItem="CUi-Ce-6H7" secondAttribute="bottom" constant="10" id="aRn-B5-UmX"/>
+                            <constraint firstItem="yX5-wH-e5r" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="cvj-j3-DII"/>
+                            <constraint firstItem="yX5-wH-e5r" firstAttribute="top" secondItem="UYb-5O-NY3" secondAttribute="bottom" constant="30" id="mAw-wX-Hls"/>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="CUi-Ce-6H7" secondAttribute="trailing" constant="30" id="x6c-VN-HDo"/>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="UYb-5O-NY3" secondAttribute="trailing" constant="30" id="yld-Ag-038"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="szg-bv-rIS"/>
                     </view>
                     <connections>
+                        <outlet property="GoldenRulereminder" destination="nfo-Vd-bHL" id="uaG-fN-QB6"/>
                         <outlet property="VideoImage" destination="UYb-5O-NY3" id="Yhc-h9-hn2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MyU-XY-ugP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-242.40000000000001" y="381.85907046476763"/>
+            <point key="canvasLocation" x="-243.75" y="381.33802816901408"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="U7H-4O-WBc">
             <objects>
                 <viewController id="OJg-BF-j3L" customClass="SettingsViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="erk-j6-0Df">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="On-Screen notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBj-jE-Qeg">
@@ -142,7 +182,7 @@ Please visit GoldenRuleReminder.com</string>
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anP-cQ-oCm">
-                                <rect key="frame" x="157" y="587" width="60" height="60"/>
+                                <rect key="frame" x="157" y="488" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="G8g-Ff-5sE"/>
                                     <constraint firstAttribute="height" constant="60" id="dgW-A0-Qpx"/>
@@ -176,21 +216,21 @@ Please visit GoldenRuleReminder.com</string>
             <objects>
                 <viewController id="qib-sT-zhp" customClass="NewsViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ax-QY-0Ad">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v1G-jE-VT8">
-                                <rect key="frame" x="0.0" y="40" width="375" height="500"/>
+                                <rect key="frame" x="0.0" y="40" width="320" height="500"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="4Y6-Hf-YC1"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="160" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="GoldenRuleIOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
+                                        <rect key="frame" x="0.0" y="28" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m5i-mb-5rV" id="1w5-An-upH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="news_item" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-4k-IIR">
@@ -266,7 +306,7 @@ Please visit GoldenRuleReminder.com</string>
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KU-U3U">
@@ -315,6 +355,6 @@ Please visit GoldenRuleReminder.com</string>
         <image name="video_image" width="1218" height="824"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mcM-db-jAi"/>
+        <segue reference="Hxg-xo-9P3"/>
     </inferredMetricsTieBreakers>
 </document>

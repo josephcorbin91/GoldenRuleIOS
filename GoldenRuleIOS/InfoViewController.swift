@@ -13,7 +13,10 @@ import AVFoundation
 class InfoViewController: UIViewController {
     @IBOutlet weak var VideoImage: UIButton!
     
-    @IBAction func ImageButton(_ sender: Any) {
+    @IBOutlet weak var GoldenRulereminder: UILabel!
+    
+    
+   @IBAction func ImageButton(_ sender: Any) {
          print("animation start ")
         let animationDuration=0.25
         UIView.animate(withDuration: animationDuration, animations: {
@@ -46,9 +49,13 @@ class InfoViewController: UIViewController {
             player.play()
         }
     }
+    @objc func websiteLinkPressed(sender:UIGestureRecognizer){
+        UIApplication.shared.canOpenURL(NSURL(string: "http://www.google.com")! as URL)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        _ = UIGestureRecognizer(target: self, action: #selector(InfoViewController.websiteLinkPressed))
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "info_background.png")?.draw(in: self.view.bounds)
         
