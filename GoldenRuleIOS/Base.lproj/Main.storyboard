@@ -28,38 +28,31 @@ Please visit GoldenRuleReminder.com</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-wH-e5r">
-                                <rect key="frame" x="140" y="508" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYb-5O-NY3">
+                                <rect key="frame" x="30" y="247" width="260" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="0Bh-uA-ZZV"/>
-                                    <constraint firstAttribute="height" constant="60" id="JMf-vy-9R3"/>
+                                    <constraint firstAttribute="height" constant="150" id="ZPR-9I-i9n"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="video_image"/>
+                                <connections>
+                                    <action selector="ImageButton:" destination="u56-KQ-Hak" eventType="touchUpInside" id="L7D-Bm-fyo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-wH-e5r">
+                                <rect key="frame" x="130" y="488" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6dz-oW-IE5"/>
+                                    <constraint firstAttribute="width" constant="60" id="p2p-oD-sIP"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="settings_back_image"/>
                                 <connections>
                                     <segue destination="9pv-A4-QxB" kind="show" id="Hxg-xo-9P3"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSF-Vk-DuO">
-                                <rect key="frame" x="46.5" y="259.5" width="227" height="53.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please visit     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-pK-ZYM">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="53.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GoldenRuleReminder.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfo-Vd-bHL">
-                                        <rect key="frame" x="81" y="0.0" width="146" height="53.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.21923626243985384" green="0.82941342684591612" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-Ce-6H7">
-                                <rect key="frame" x="30" y="50" width="260" height="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-Ce-6H7">
+                                <rect key="frame" x="10" y="47" width="300" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="gpe-kE-9uW"/>
+                                    <constraint firstAttribute="height" constant="180" id="TPc-No-5If"/>
                                 </constraints>
                                 <string key="text">The goal of our Golden Rule App™ is to draw attention to the Golden Rule and to world peace – daily. On a planet with so much disharmony, it’s clear that this uniting ethic has been under taught, under publicized, and very often forgotten. So, we have developed a reminder, delivered and connecting people in a unique way, at 1234pm. You can help by using it and telling friends, family, and group leaders. Or, just show them the video below!
 </string>
@@ -67,30 +60,38 @@ Please visit GoldenRuleReminder.com</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYb-5O-NY3">
-                                <rect key="frame" x="30" y="323" width="260" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="gCb-oK-Ars"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="video_image"/>
-                                <connections>
-                                    <action selector="ImageButton:" destination="u56-KQ-Hak" eventType="touchUpInside" id="L7D-Bm-fyo"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSF-Vk-DuO">
+                                <rect key="frame" x="10" y="212" width="227" height="14.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please visit     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-pK-ZYM">
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GoldenRuleReminder.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfo-Vd-bHL">
+                                        <rect key="frame" x="81" y="0.0" width="146" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.21923626243985384" green="0.82941342684591612" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UYb-5O-NY3" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="30" id="0BB-U5-94V"/>
-                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="30" id="9nt-fj-qxn"/>
-                            <constraint firstItem="UYb-5O-NY3" firstAttribute="top" secondItem="LSF-Vk-DuO" secondAttribute="bottom" constant="15" id="Ofb-Vl-3Xf"/>
-                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="QE5-eW-Db9"/>
-                            <constraint firstItem="szg-bv-rIS" firstAttribute="bottom" secondItem="yX5-wH-e5r" secondAttribute="bottom" id="WkP-I4-tyh"/>
-                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="30" id="Y3R-R4-ohj"/>
-                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="top" secondItem="CUi-Ce-6H7" secondAttribute="bottom" constant="10" id="aRn-B5-UmX"/>
-                            <constraint firstItem="yX5-wH-e5r" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" constant="10" id="cvj-j3-DII"/>
-                            <constraint firstItem="yX5-wH-e5r" firstAttribute="top" secondItem="UYb-5O-NY3" secondAttribute="bottom" constant="30" id="mAw-wX-Hls"/>
-                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="CUi-Ce-6H7" secondAttribute="trailing" constant="30" id="x6c-VN-HDo"/>
-                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="UYb-5O-NY3" secondAttribute="trailing" constant="30" id="yld-Ag-038"/>
+                            <constraint firstItem="UYb-5O-NY3" firstAttribute="top" secondItem="CUi-Ce-6H7" secondAttribute="bottom" constant="20" id="0KV-E7-DY0"/>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="CUi-Ce-6H7" secondAttribute="trailing" constant="10" id="33Z-r7-NcT"/>
+                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="27" id="650-V9-FGK"/>
+                            <constraint firstItem="yX5-wH-e5r" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="7ml-6w-Up4"/>
+                            <constraint firstAttribute="bottom" secondItem="yX5-wH-e5r" secondAttribute="bottom" constant="20" id="89B-KZ-2jB"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="10" id="FRe-GF-48k"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="IBC-2b-fjx"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="OXW-Q9-C5g"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="5" id="aU0-AE-FeQ"/>
+                            <constraint firstItem="UYb-5O-NY3" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="30" id="cdF-47-LNc"/>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="UYb-5O-NY3" secondAttribute="trailing" constant="30" id="iY5-6y-yKP"/>
+                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="wUg-er-fzH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="szg-bv-rIS"/>
                     </view>
@@ -131,6 +132,7 @@ Please visit GoldenRuleReminder.com</string>
                                             </switch>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="7k2-pV-BX0"/>
                                             <constraint firstAttribute="height" constant="31" id="tTh-jm-JW1"/>
                                         </constraints>
                                     </stackView>
@@ -150,6 +152,9 @@ Please visit GoldenRuleReminder.com</string>
                                                 </connections>
                                             </switch>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="4Ax-cn-cUF"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wt-1P-LZG">
                                         <rect key="frame" x="0.0" y="62" width="300" height="31"/>
@@ -203,6 +208,16 @@ Please visit GoldenRuleReminder.com</string>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kyp-Ym-qkk" secondAttribute="trailing" id="2QX-ac-S1A"/>
+                                    <constraint firstItem="kyp-Ym-qkk" firstAttribute="leading" secondItem="NUZ-e1-mZZ" secondAttribute="leading" id="5tl-TT-awb"/>
+                                    <constraint firstItem="9Wt-1P-LZG" firstAttribute="top" secondItem="kyp-Ym-qkk" secondAttribute="bottom" constant="10" id="Tag-iu-KCf"/>
+                                    <constraint firstItem="WN2-24-B96" firstAttribute="top" secondItem="NUZ-e1-mZZ" secondAttribute="top" constant="10" id="dox-v5-2Wb"/>
+                                    <constraint firstItem="WN2-24-B96" firstAttribute="leading" secondItem="NUZ-e1-mZZ" secondAttribute="leading" id="kUi-lG-gae"/>
+                                    <constraint firstAttribute="trailing" secondItem="WN2-24-B96" secondAttribute="trailing" id="oYP-1A-IqG"/>
+                                    <constraint firstItem="kyp-Ym-qkk" firstAttribute="top" secondItem="WN2-24-B96" secondAttribute="bottom" constant="10" id="ocR-wz-CLw"/>
+                                    <constraint firstItem="kyp-Ym-qkk" firstAttribute="top" secondItem="WN2-24-B96" secondAttribute="bottom" constant="10" id="ywm-5R-fNf"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anP-cQ-oCm">
                                 <rect key="frame" x="130" y="488" width="60" height="60"/>
@@ -245,13 +260,65 @@ Please visit GoldenRuleReminder.com</string>
                     <view key="view" contentMode="scaleToFill" id="N9P-Ie-dgD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qx-d4-GSq">
+                                <rect key="frame" x="16" y="20" width="29" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akm-ec-OP7">
+                                <rect key="frame" x="130" y="488" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Zke-Jx-DO0"/>
+                                    <constraint firstAttribute="width" constant="60" id="ZsT-or-7Rt"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="settings_back_image"/>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="5OH-ah-TTx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY8-ad-MsS">
+                                <rect key="frame" x="10" y="50" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="Ln1-y6-zNC"/>
+                                    <constraint firstAttribute="height" constant="300" id="sWD-XO-PYw"/>
+                                </constraints>
+                                <mutableString key="text">How can you help to support this project? 
+
+1. Use the app. Tell your friends and encourage them to spread the idea through social media. 
+
+2. Contact leaders of groups that you belong to (school, religious, mindfulness, yoga, etc.) Encourage your group to become a co-sponsor. 
+
+3. Support our effort to raise funds for a media campaign to publicize the Golden Rule App through: 
+
+  (a) crowd funding
+
+  (b) sponsorship by schools, churches, businesses, etc. 
+
+  (c) sale of an updated version of the free app (with new functionality) 
+
+For details visit:  GoldenRuleReminder.com</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PY8-ad-MsS" firstAttribute="top" secondItem="GZ5-yg-b2F" secondAttribute="top" constant="30" id="IdA-u9-4K5"/>
+                            <constraint firstItem="PY8-ad-MsS" firstAttribute="leading" secondItem="GZ5-yg-b2F" secondAttribute="leading" constant="10" id="LLQ-yN-znG"/>
+                            <constraint firstItem="akm-ec-OP7" firstAttribute="centerX" secondItem="N9P-Ie-dgD" secondAttribute="centerX" id="SKa-oE-Im1"/>
+                            <constraint firstItem="GZ5-yg-b2F" firstAttribute="bottom" secondItem="akm-ec-OP7" secondAttribute="bottom" constant="20" id="WtK-6k-3hd"/>
+                            <constraint firstAttribute="trailing" secondItem="PY8-ad-MsS" secondAttribute="trailing" constant="10" id="xnm-0g-4wv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GZ5-yg-b2F"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4z4-X7-JlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="-327"/>
+            <point key="canvasLocation" x="2718.75" y="-327.46478873239437"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="D0G-xh-E8j">
@@ -262,10 +329,10 @@ Please visit GoldenRuleReminder.com</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v1G-jE-VT8">
-                                <rect key="frame" x="0.0" y="40" width="320" height="500"/>
+                                <rect key="frame" x="0.0" y="40" width="320" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="4Y6-Hf-YC1"/>
+                                    <constraint firstAttribute="height" constant="400" id="evT-8N-1hl"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="160" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="GoldenRuleIOS" customModuleProvider="target">
@@ -321,20 +388,25 @@ Please visit GoldenRuleReminder.com</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXq-Yq-fYa">
-                                <rect key="frame" x="168" y="566" width="60" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXq-Yq-fYa">
+                                <rect key="frame" x="130" y="488" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="RIz-Hi-VoP"/>
-                                    <constraint firstAttribute="width" constant="60" id="SPr-0S-3Zg"/>
+                                    <constraint firstAttribute="width" constant="60" id="iNh-XO-dn7"/>
+                                    <constraint firstAttribute="height" constant="60" id="qjI-v7-06P"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="settings_back_image"/>
+                                <connections>
+                                    <segue destination="9pv-A4-QxB" kind="show" id="hPL-4W-cUO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v1G-jE-VT8" firstAttribute="leading" secondItem="1r8-NJ-ZHa" secondAttribute="leading" id="QwT-OC-Fjo"/>
-                            <constraint firstItem="1r8-NJ-ZHa" firstAttribute="trailing" secondItem="v1G-jE-VT8" secondAttribute="trailing" id="R8q-XN-T20"/>
-                            <constraint firstItem="v1G-jE-VT8" firstAttribute="top" secondItem="1r8-NJ-ZHa" secondAttribute="top" constant="20" id="jXa-aB-8ZK"/>
+                            <constraint firstItem="v1G-jE-VT8" firstAttribute="trailing" secondItem="1r8-NJ-ZHa" secondAttribute="trailing" id="0kx-WU-KdY"/>
+                            <constraint firstAttribute="bottom" secondItem="dXq-Yq-fYa" secondAttribute="bottom" constant="20" id="7dm-yC-ePO"/>
+                            <constraint firstItem="v1G-jE-VT8" firstAttribute="top" secondItem="1r8-NJ-ZHa" secondAttribute="top" constant="20" id="F6Z-Hb-qEX"/>
+                            <constraint firstItem="v1G-jE-VT8" firstAttribute="leading" secondItem="1r8-NJ-ZHa" secondAttribute="leading" id="NNr-yQ-ahx"/>
+                            <constraint firstItem="dXq-Yq-fYa" firstAttribute="centerX" secondItem="0ax-QY-0Ad" secondAttribute="centerX" id="r3y-Gj-rc2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1r8-NJ-ZHa"/>
                     </view>
