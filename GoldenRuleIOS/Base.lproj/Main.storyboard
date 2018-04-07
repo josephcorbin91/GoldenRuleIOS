@@ -176,7 +176,7 @@ Please visit GoldenRuleReminder.com</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sy8-lU-CyD">
                                         <rect key="frame" x="0.0" y="93" width="300" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On-Screen notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBj-jE-Qeg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBj-jE-Qeg">
                                                 <rect key="frame" x="0.0" y="0.0" width="251" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -193,7 +193,7 @@ Please visit GoldenRuleReminder.com</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xW5-mA-YM8">
                                         <rect key="frame" x="0.0" y="124" width="300" height="31"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-XS-f8k">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsored notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-XS-f8k">
                                                 <rect key="frame" x="0.0" y="0.0" width="251" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -261,13 +261,6 @@ Please visit GoldenRuleReminder.com</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Qx-d4-GSq">
-                                <rect key="frame" x="16" y="20" width="29" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akm-ec-OP7">
                                 <rect key="frame" x="130" y="488" width="60" height="60"/>
                                 <constraints>
@@ -285,7 +278,7 @@ Please visit GoldenRuleReminder.com</string>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="500" id="Ln1-y6-zNC"/>
                                     <constraint firstAttribute="height" constant="300" id="sWD-XO-PYw"/>
                                 </constraints>
-                                <mutableString key="text">How can you help to support this project? 
+                                <string key="text">How can you help to support this project? 
 
 1. Use the app. Tell your friends and encourage them to spread the idea through social media. 
 
@@ -299,7 +292,7 @@ Please visit GoldenRuleReminder.com</string>
 
   (c) sale of an updated version of the free app (with new functionality) 
 
-For details visit:  GoldenRuleReminder.com</mutableString>
+For details visit:  GoldenRuleReminder.com</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -335,7 +328,7 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                     <constraint firstAttribute="height" constant="400" id="evT-8N-1hl"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="160" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="GoldenRuleIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="160" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="GoldenRuleIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m5i-mb-5rV" id="1w5-An-upH">
@@ -443,7 +436,7 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-iw-1S5">
                                                 <rect key="frame" x="25.5" y="79.5" width="29" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -469,7 +462,7 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-Ni-Omf">
                                                 <rect key="frame" x="8.5" y="79.5" width="63.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -479,7 +472,7 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-0d-Dr6">
-                                        <rect key="frame" x="160" y="0.0" width="80" height="100"/>
+                                        <rect key="frame" x="160" y="0.0" width="79.5" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-Ru-oWV">
                                                 <rect key="frame" x="10" y="0.0" width="60" height="60"/>
@@ -493,9 +486,9 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-HR-8oP">
-                                                <rect key="frame" x="13.5" y="79.5" width="53.5" height="20.5"/>
+                                                <rect key="frame" x="13" y="79.5" width="53.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -505,10 +498,10 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-aF-K10">
-                                        <rect key="frame" x="240" y="0.0" width="80" height="100"/>
+                                        <rect key="frame" x="239.5" y="0.0" width="80.5" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcO-eN-UFC">
-                                                <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="10.5" y="0.0" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="OZV-2Q-PYA"/>
                                                     <constraint firstAttribute="width" constant="60" id="jyP-wp-sRr"/>
@@ -521,7 +514,7 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fI-jS-Tcg">
                                                 <rect key="frame" x="22.5" y="79.5" width="35.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -533,7 +526,6 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="FUa-0d-Dr6" firstAttribute="width" secondItem="RIs-z2-nbc" secondAttribute="width" id="9Zv-UZ-cTe"/>
-                                    <constraint firstAttribute="height" constant="100" id="eql-gJ-PW5"/>
                                     <constraint firstItem="3b3-aF-K10" firstAttribute="width" secondItem="RIs-z2-nbc" secondAttribute="width" id="rYm-id-nKr"/>
                                     <constraint firstItem="gMl-Z7-SDD" firstAttribute="width" secondItem="RIs-z2-nbc" secondAttribute="width" id="vip-8O-fDy"/>
                                 </constraints>
@@ -541,9 +533,9 @@ For details visit:  GoldenRuleReminder.com</mutableString>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="DIF-rp-q77" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="5f1-n0-vEn"/>
-                            <constraint firstAttribute="bottom" secondItem="DIF-rp-q77" secondAttribute="bottom" constant="50" id="Nb5-fI-7gI"/>
-                            <constraint firstAttribute="trailing" secondItem="DIF-rp-q77" secondAttribute="trailing" id="g6T-tL-iww"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="DIF-rp-q77" secondAttribute="trailing" id="2EF-b9-IQ9"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="DIF-rp-q77" secondAttribute="bottom" constant="50" id="eVH-jG-LDB"/>
+                            <constraint firstItem="DIF-rp-q77" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="vi0-v9-xrR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -565,6 +557,6 @@ For details visit:  GoldenRuleReminder.com</mutableString>
         <image name="video_image" width="1218" height="824"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hxg-xo-9P3"/>
+        <segue reference="mcM-db-jAi"/>
     </inferredMetricsTieBreakers>
 </document>

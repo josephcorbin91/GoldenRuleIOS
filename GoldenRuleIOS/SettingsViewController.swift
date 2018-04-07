@@ -109,6 +109,13 @@ stopSoundMusic()
     @IBAction func Vibrations(_ sender: Any) {
     }
     @IBAction func OnScreenNotifications(_ sender: Any) {
+        
+        if OnScreenNotificationsSwitch.isOn{
+        print("default on")
+        let alert = CustomAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
+        
+        alert.show(animated: true)
+        }
     }
     @IBAction func Sponsor(_ sender: Any) {
     }
