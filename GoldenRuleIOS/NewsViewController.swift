@@ -9,9 +9,28 @@
 import UIKit
 import CoreData
 
-class NewsViewController: UIViewController {
+class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return newsData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let newsItem = newsData[indexPath.row]
+        let newsCell = tableView.dequeueReusableCell(withIdentifier: "newsItemIdentifier", for: indexPath) as! NewsCell
+        newsCell.TitleLabel.text=newsItem.value(forKey: "mNewsTitle") as? String
+        newsCell.BodyLabel.text=newsItem.value(forKey: "mNewsBody") as? String
+        newsCell.TimeLabel.text=newsItem.value(forKey: "mTime") as? String
+       
+        return newsCell
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     
+    private var newsData: [NSManagedObject]=[]
+
+    @IBOutlet weak var newsTableView: UITableView!
     func seedIOSDatabase(){
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -43,6 +62,8 @@ class NewsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.newsTableView.delegate=self
+        self.newsTableView.dataSource=self
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "news_background.png")?.draw(in: self.view.bounds)
         
@@ -55,6 +76,10 @@ class NewsViewController: UIViewController {
             
         }
 
+        
+        for i in 0...100{
+            data.append(News)
+        }
         // Do any additional setup after loading the view.
     }
 

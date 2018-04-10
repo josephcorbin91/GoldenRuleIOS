@@ -11,7 +11,7 @@ import UIKit
 //
 import UIKit
 
-class CustomAlert: UIView, Modal {
+class DefaultNotificationAlert: UIView, Modal {
     var backgroundView = UIView()
     var dialogView = UIView()
     
@@ -75,3 +75,4 @@ class CustomAlert: UIView, Modal {
     }
     
 }
+

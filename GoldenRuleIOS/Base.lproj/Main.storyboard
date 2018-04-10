@@ -60,8 +60,8 @@ Please visit GoldenRuleReminder.com</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSF-Vk-DuO">
-                                <rect key="frame" x="10" y="212" width="227" height="14.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSF-Vk-DuO">
+                                <rect key="frame" x="10" y="222.5" width="227" height="14.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please visit     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-pK-ZYM">
                                         <rect key="frame" x="0.0" y="0.0" width="81" height="14.5"/>
@@ -76,6 +76,10 @@ Please visit GoldenRuleReminder.com</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14.5" id="PKe-su-ZeQ"/>
+                                    <constraint firstAttribute="width" constant="227" id="Z2u-X1-aKy"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,10 +89,8 @@ Please visit GoldenRuleReminder.com</string>
                             <constraint firstItem="CUi-Ce-6H7" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="27" id="650-V9-FGK"/>
                             <constraint firstItem="yX5-wH-e5r" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="7ml-6w-Up4"/>
                             <constraint firstAttribute="bottom" secondItem="yX5-wH-e5r" secondAttribute="bottom" constant="20" id="89B-KZ-2jB"/>
-                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="10" id="FRe-GF-48k"/>
-                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="IBC-2b-fjx"/>
-                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="OXW-Q9-C5g"/>
-                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="5" id="aU0-AE-FeQ"/>
+                            <constraint firstItem="UYb-5O-NY3" firstAttribute="top" secondItem="LSF-Vk-DuO" secondAttribute="bottom" constant="10" id="Kaf-Qk-osX"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="Oao-sF-Odl"/>
                             <constraint firstItem="UYb-5O-NY3" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="30" id="cdF-47-LNc"/>
                             <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="UYb-5O-NY3" secondAttribute="trailing" constant="30" id="iY5-6y-yKP"/>
                             <constraint firstItem="CUi-Ce-6H7" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="wUg-er-fzH"/>
@@ -253,10 +255,10 @@ Please visit GoldenRuleReminder.com</string>
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="417.8410794602699"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="71P-xA-73O">
             <objects>
-                <viewController id="aqF-5N-o6g" sceneMemberID="viewController">
+                <viewController id="aqF-5N-o6g" customClass="HelpViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9P-Ie-dgD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,10 +327,11 @@ For details visit:  GoldenRuleReminder.com</string>
                                 <rect key="frame" x="0.0" y="40" width="320" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="evT-8N-1hl"/>
+                                    <constraint firstAttribute="width" constant="320" id="XW1-Vc-1g1"/>
+                                    <constraint firstAttribute="height" constant="400" id="eNJ-RV-1s1"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="160" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="GoldenRuleIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsItemIdentifier" rowHeight="160" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="GoldenRuleIOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m5i-mb-5rV" id="1w5-An-upH">
@@ -373,6 +376,7 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 <constraint firstItem="M0l-BC-9np" firstAttribute="top" secondItem="O2o-1d-Ypy" secondAttribute="bottom" constant="20" id="kri-lT-1yD"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="BodyLabel" destination="z5v-3g-wF0" id="bMs-zx-Cyx"/>
                                             <outlet property="TimeLabel" destination="O2o-1d-Ypy" id="JLC-0T-4ym"/>
@@ -395,14 +399,17 @@ For details visit:  GoldenRuleReminder.com</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="v1G-jE-VT8" firstAttribute="trailing" secondItem="1r8-NJ-ZHa" secondAttribute="trailing" id="0kx-WU-KdY"/>
+                            <constraint firstItem="v1G-jE-VT8" firstAttribute="leading" secondItem="1r8-NJ-ZHa" secondAttribute="leading" id="4RU-pD-MbK"/>
                             <constraint firstAttribute="bottom" secondItem="dXq-Yq-fYa" secondAttribute="bottom" constant="20" id="7dm-yC-ePO"/>
-                            <constraint firstItem="v1G-jE-VT8" firstAttribute="top" secondItem="1r8-NJ-ZHa" secondAttribute="top" constant="20" id="F6Z-Hb-qEX"/>
-                            <constraint firstItem="v1G-jE-VT8" firstAttribute="leading" secondItem="1r8-NJ-ZHa" secondAttribute="leading" id="NNr-yQ-ahx"/>
+                            <constraint firstItem="v1G-jE-VT8" firstAttribute="trailing" secondItem="1r8-NJ-ZHa" secondAttribute="trailing" id="aPX-6w-oJS"/>
+                            <constraint firstItem="v1G-jE-VT8" firstAttribute="top" secondItem="1r8-NJ-ZHa" secondAttribute="top" constant="20" id="dVs-6C-IuY"/>
                             <constraint firstItem="dXq-Yq-fYa" firstAttribute="centerX" secondItem="0ax-QY-0Ad" secondAttribute="centerX" id="r3y-Gj-rc2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1r8-NJ-ZHa"/>
                     </view>
+                    <connections>
+                        <outlet property="newsTableView" destination="v1G-jE-VT8" id="Pfh-tz-bKZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aG9-T5-2VS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,10 +427,10 @@ For details visit:  GoldenRuleReminder.com</string>
                                 <rect key="frame" x="0.0" y="418" width="320" height="100"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RIs-z2-nbc">
-                                        <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KU-U3U">
-                                                <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="23.5" y="0.0" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="MLZ-if-rBG"/>
                                                     <constraint firstAttribute="width" constant="60" id="Zgf-8m-C9J"/>
@@ -434,7 +441,7 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-iw-1S5">
-                                                <rect key="frame" x="25.5" y="79.5" width="29" height="20.5"/>
+                                                <rect key="frame" x="39" y="79.5" width="29" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -446,10 +453,10 @@ For details visit:  GoldenRuleReminder.com</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gMl-Z7-SDD">
-                                        <rect key="frame" x="80" y="0.0" width="80" height="100"/>
+                                        <rect key="frame" x="107" y="0.0" width="106.5" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h7-Dy-mda">
-                                                <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="23.5" y="0.0" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="B0Z-DQ-jVj"/>
                                                     <constraint firstAttribute="width" constant="60" id="BoB-oJ-s7b"/>
@@ -460,7 +467,7 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-Ni-Omf">
-                                                <rect key="frame" x="8.5" y="79.5" width="63.5" height="20.5"/>
+                                                <rect key="frame" x="21.5" y="79.5" width="63.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -472,10 +479,10 @@ For details visit:  GoldenRuleReminder.com</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-0d-Dr6">
-                                        <rect key="frame" x="160" y="0.0" width="79.5" height="100"/>
+                                        <rect key="frame" x="213.5" y="0.0" width="106.5" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-Ru-oWV">
-                                                <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="23.5" y="0.0" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="G2B-Ob-xVP"/>
                                                     <constraint firstAttribute="height" constant="60" id="S5d-Ob-T8f"/>
@@ -486,7 +493,7 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-HR-8oP">
-                                                <rect key="frame" x="13" y="79.5" width="53.5" height="20.5"/>
+                                                <rect key="frame" x="26.5" y="79.5" width="53.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -497,36 +504,9 @@ For details visit:  GoldenRuleReminder.com</string>
                                             <constraint firstAttribute="height" constant="100" id="dzB-it-zoj"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3b3-aF-K10">
-                                        <rect key="frame" x="239.5" y="0.0" width="80.5" height="100"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcO-eN-UFC">
-                                                <rect key="frame" x="10.5" y="0.0" width="60" height="60"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="OZV-2Q-PYA"/>
-                                                    <constraint firstAttribute="width" constant="60" id="jyP-wp-sRr"/>
-                                                </constraints>
-                                                <state key="normal" title="Button" image="message"/>
-                                                <connections>
-                                                    <segue destination="aqF-5N-o6g" kind="show" id="8nc-8Q-dRx"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fI-jS-Tcg">
-                                                <rect key="frame" x="22.5" y="79.5" width="35.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="HCW-Yj-eRH"/>
-                                            <constraint firstItem="bcO-eN-UFC" firstAttribute="top" secondItem="3b3-aF-K10" secondAttribute="top" id="zGI-he-dAo"/>
-                                        </constraints>
-                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="FUa-0d-Dr6" firstAttribute="width" secondItem="RIs-z2-nbc" secondAttribute="width" id="9Zv-UZ-cTe"/>
-                                    <constraint firstItem="3b3-aF-K10" firstAttribute="width" secondItem="RIs-z2-nbc" secondAttribute="width" id="rYm-id-nKr"/>
                                     <constraint firstItem="gMl-Z7-SDD" firstAttribute="width" secondItem="RIs-z2-nbc" secondAttribute="width" id="vip-8O-fDy"/>
                                 </constraints>
                             </stackView>
@@ -557,6 +537,6 @@ For details visit:  GoldenRuleReminder.com</string>
         <image name="video_image" width="1218" height="824"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mcM-db-jAi"/>
+        <segue reference="hPL-4W-cUO"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -112,13 +112,18 @@ stopSoundMusic()
         
         if OnScreenNotificationsSwitch.isOn{
         print("default on")
-        let alert = CustomAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
+        let alert = DefaultNotificationAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
         
         alert.show(animated: true)
         }
     }
     @IBAction func Sponsor(_ sender: Any) {
-    }
+        if SponsorSwitch.isOn{
+            print("default on")
+            let alert = SponsoredNotificationAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
+            
+            alert.show(animated: true)
+        }    }
     override func viewDidLoad() {
         super.viewDidLoad()
      
