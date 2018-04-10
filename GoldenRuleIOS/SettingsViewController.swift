@@ -81,6 +81,7 @@ var player: AVAudioPlayer?
             UserDefaults.standard.set(true, forKey: "SoundChime") //Bool
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
 playSoundMusic()
+            SoundMusic.setOn(false, animated: false)
 
 
         }else{
@@ -98,6 +99,7 @@ stopSoundMusic()
             UserDefaults.standard.set(true, forKey: "SoundMusic") //Bool
             print("SoundMusic "+String(UserDefaults.standard.bool(forKey: "SoundMusic")))
 
+            SoundChime.setOn(false, animated: false)
 playSoundMusic()
         }else{
                         UserDefaults.standard.set(false, forKey: "SoundMusic") //Bool
@@ -115,6 +117,7 @@ stopSoundMusic()
         let alert = DefaultNotificationAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
         
         alert.show(animated: true)
+            SponsorSwitch.setOn(false, animated: false)
         }
     }
     @IBAction func Sponsor(_ sender: Any) {
@@ -123,6 +126,7 @@ stopSoundMusic()
             let alert = SponsoredNotificationAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
             
             alert.show(animated: true)
+            OnScreenNotificationsSwitch.setOn(false, animated: false)
         }    }
     override func viewDidLoad() {
         super.viewDidLoad()

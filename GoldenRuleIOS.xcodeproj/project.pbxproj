@@ -25,7 +25,6 @@
 		DD7306A92068C0ED00941331 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD7306A82068C0ED00941331 /* chime.mp3 */; };
 		DDE3B52C2068AE9F008A2880 /* golden_rule_intro_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DDE3B52B2068AE9F008A2880 /* golden_rule_intro_video.mp4 */; };
 		DDF209A6207D592200A875B0 /* NewsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF209A5207D592200A875B0 /* NewsTableView.swift */; };
-		DDF209A8207D602700A875B0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF209A7207D602700A875B0 /* News.swift */; };
 		DDF68D6F2065A9C500C2C595 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */; };
 		DDF68D712065A9DA00C2C595 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D702065A9DA00C2C595 /* InfoViewController.swift */; };
 		DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D722065A9F100C2C595 /* SettingsViewController.swift */; };
@@ -88,7 +87,6 @@
 		DD7306A82068C0ED00941331 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chime.mp3; path = ../../../Downloads/chime.mp3; sourceTree = "<group>"; };
 		DDE3B52B2068AE9F008A2880 /* golden_rule_intro_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = golden_rule_intro_video.mp4; path = ../../../Downloads/golden_rule_intro_video.mp4; sourceTree = "<group>"; };
 		DDF209A5207D592200A875B0 /* NewsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableView.swift; sourceTree = "<group>"; };
-		DDF209A7207D602700A875B0 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		DDF68D702065A9DA00C2C595 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		DDF68D722065A9F100C2C595 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 				DD48304920786884006B9573 /* Modal.swift */,
 				DD48304B20786901006B9573 /* SposoredNotificationAlert.swift */,
 				DD48304D20786F22006B9573 /* DefaultNotificationAlert.swift */,
-				DDF209A7207D602700A875B0 /* News.swift */,
 			);
 			path = GoldenRuleIOS;
 			sourceTree = "<group>";
@@ -590,7 +587,6 @@
 				DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */,
 				DD0C67512069B2E600F1DFDB /* NewsCell.swift in Sources */,
 				DD48304A20786884006B9573 /* Modal.swift in Sources */,
-				DDF209A8207D602700A875B0 /* News.swift in Sources */,
 				DD1E294A2069651800A6ACDD /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

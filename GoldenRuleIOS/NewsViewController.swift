@@ -43,12 +43,12 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         do {
             try context.save()
         }catch{
-            print("Failed saving")
         }
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "News")
         request.returnsObjectsAsFaults = false
         do {
+            print("Failed saving")
             let result = try context.fetch(request)
             for data in result as! [NSManagedObject]{
                 print(data.value(forKey: "mTime") as! String)
@@ -62,6 +62,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        seedIOSDatabase()
         self.newsTableView.delegate=self
         self.newsTableView.dataSource=self
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -76,13 +77,24 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }
 
-        
-        for i in 0...100{
-            data.append(News)
-        }
+      
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+            
+        }
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "News")
+        do{
+            newsData = try managedContext.fetch(fetchRequest)
+        }
+        catch let error as NSError{
+            print("Could not fetch")
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -196,13 +196,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoldenRuleIOS/SettingsViewController.swift"
-            timestampString = "544764729.683768"
+            timestampString = "545096243.9732881"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
             endingLineNumber = "36"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "playSoundChime()"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -212,7 +212,7 @@
                   moduleName = "GoldenRuleIOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/SettingsViewController.swift"
-                  timestampString = "545086836.146592"
+                  timestampString = "545096244.145802"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -227,7 +227,7 @@
                   moduleName = "GoldenRuleIOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/user132771/Documents/GoldenRuleIOS/GoldenRuleIOS/SettingsViewController.swift"
-                  timestampString = "545086836.151181"
+                  timestampString = "545096244.149554"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
