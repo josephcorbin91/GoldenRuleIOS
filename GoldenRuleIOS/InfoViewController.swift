@@ -18,13 +18,11 @@ class InfoViewController: UIViewController {
     
    @IBAction func ImageButton(_ sender: Any) {
          print("animation start ")
-        let animationDuration=0.25
+        let animationDuration=0.10
         UIView.animate(withDuration: animationDuration, animations: {
-            self.VideoImage.alpha=0.0
-            
+
         },completion: { (value: Bool) in
             self.playVideo()
-            self.VideoImage.alpha=1.0
             print("animation end ")
             
         })

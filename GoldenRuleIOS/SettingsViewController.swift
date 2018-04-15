@@ -80,14 +80,14 @@ var player: AVAudioPlayer?
         if SoundChime.isOn{
             UserDefaults.standard.set(true, forKey: "SoundChime") //Bool
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
-playSoundMusic()
+playSoundChime()
             SoundMusic.setOn(false, animated: false)
 
 
         }else{
                         UserDefaults.standard.set(false, forKey: "SoundChime") //Bool
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
-stopSoundMusic()
+stopSoundChime()
 
 
         }
@@ -109,12 +109,20 @@ stopSoundMusic()
         }
     }
     @IBAction func Vibrations(_ sender: Any) {
+        if VibrationsSwitch.isOn{
+            AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+            UserDefaults.standard.set(true, forKey: "Vibration") //Bool
+
+        }else{
+            UserDefaults.standard.set(false, forKey: "Vibration") //Bool
+
+        }
     }
     @IBAction func OnScreenNotifications(_ sender: Any) {
         
         if OnScreenNotificationsSwitch.isOn{
         print("default on")
-        let alert = DefaultNotificationAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
+        let alert = DefaultNotificationAlert(title: "Default Notification", image: UIImage(named: "background_settings.png")!)
         
         alert.show(animated: true)
             SponsorSwitch.setOn(false, animated: false)
@@ -123,7 +131,7 @@ stopSoundMusic()
     @IBAction func Sponsor(_ sender: Any) {
         if SponsorSwitch.isOn{
             print("default on")
-            let alert = SponsoredNotificationAlert(title: "Hello there!! 👋🏻👋🏻", image: UIImage(named: "background_settings.png")!)
+            let alert = SponsoredNotificationAlert(title: "Sponsored Notification", image: UIImage(named: "background_settings.png")!)
             
             alert.show(animated: true)
             OnScreenNotificationsSwitch.setOn(false, animated: false)

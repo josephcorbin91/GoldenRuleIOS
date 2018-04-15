@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		92A778724A2E9DEAB188EAE0 /* Pods_GoldenRuleIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF20494393C0096691BCFD5 /* Pods_GoldenRuleIOS.framework */; };
 		A91ED3141FF42AA500AF1EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */; };
-		A91ED31B1FF42AA500AF1EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED3191FF42AA500AF1EB8 /* Main.storyboard */; };
-		A91ED31D1FF42AA500AF1EB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */; };
-		A91ED3201FF42AA500AF1EB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */; };
 		A91ED32B1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED32A1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift */; };
 		A91ED3361FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */; };
+		AB1A9AD62082C67D00740CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */; };
+		AB1A9AD82082C68400740CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */; };
+		AB1A9ADC2082C98900740CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED3191FF42AA500AF1EB8 /* Main.storyboard */; };
+		AB1A9ADD2082C98D00740CB6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A91ED3211FF42AA500AF1EB8 /* Info.plist */; };
+		AB1A9AE02082CB1600740CB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB1A9ADE2082CB0100740CB6 /* GoogleService-Info.plist */; };
+		AB1A9AE22082CC0700740CB6 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB1A9AE12082CC0700740CB6 /* chime.mp3 */; };
+		AB1A9AE52082CC1100740CB6 /* golden_rule_intro_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB1A9AE32082CC1100740CB6 /* golden_rule_intro_video.mp4 */; };
+		AB1A9AE62082CC1100740CB6 /* fur_elise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB1A9AE42082CC1100740CB6 /* fur_elise.mp3 */; };
 		D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */; };
 		DD0C67512069B2E600F1DFDB /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C67502069B2E600F1DFDB /* NewsCell.swift */; };
 		DD1E294A2069651800A6ACDD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD1E29482069651800A6ACDD /* Model.xcdatamodeld */; };
@@ -21,14 +26,10 @@
 		DD48304A20786884006B9573 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48304920786884006B9573 /* Modal.swift */; };
 		DD48304C20786901006B9573 /* SposoredNotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48304B20786901006B9573 /* SposoredNotificationAlert.swift */; };
 		DD48304E20786F22006B9573 /* DefaultNotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48304D20786F22006B9573 /* DefaultNotificationAlert.swift */; };
-		DD7306A72068C0E200941331 /* fur_elise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD7306A62068C0E200941331 /* fur_elise.mp3 */; };
-		DD7306A92068C0ED00941331 /* chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD7306A82068C0ED00941331 /* chime.mp3 */; };
-		DDE3B52C2068AE9F008A2880 /* golden_rule_intro_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DDE3B52B2068AE9F008A2880 /* golden_rule_intro_video.mp4 */; };
 		DDF209A6207D592200A875B0 /* NewsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF209A5207D592200A875B0 /* NewsTableView.swift */; };
 		DDF68D6F2065A9C500C2C595 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */; };
 		DDF68D712065A9DA00C2C595 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D702065A9DA00C2C595 /* InfoViewController.swift */; };
 		DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D722065A9F100C2C595 /* SettingsViewController.swift */; };
-		DDF68D752065B6D200C2C595 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDF68D742065B6D200C2C595 /* GoogleService-Info.plist */; };
 		DDF68D772065B74100C2C595 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D762065B74100C2C595 /* HomeViewController.swift */; };
 		E4C1A8F1000A502DAF35CB46 /* Pods_GoldenRuleIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */; };
 /* End PBXBuildFile section */
@@ -77,20 +78,20 @@
 		A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenRuleIOSUITests.swift; sourceTree = "<group>"; };
 		A91ED3371FF42AA500AF1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB1A9ADE2082CB0100740CB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB1A9AE12082CC0700740CB6 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
+		AB1A9AE32082CC1100740CB6 /* golden_rule_intro_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = golden_rule_intro_video.mp4; sourceTree = "<group>"; };
+		AB1A9AE42082CC1100740CB6 /* fur_elise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fur_elise.mp3; sourceTree = "<group>"; };
 		DD0C67502069B2E600F1DFDB /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		DD1E29492069651800A6ACDD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DD483047207864A2006B9573 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		DD48304920786884006B9573 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
 		DD48304B20786901006B9573 /* SposoredNotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SposoredNotificationAlert.swift; sourceTree = "<group>"; };
 		DD48304D20786F22006B9573 /* DefaultNotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNotificationAlert.swift; sourceTree = "<group>"; };
-		DD7306A62068C0E200941331 /* fur_elise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fur_elise.mp3; path = ../../../Downloads/fur_elise.mp3; sourceTree = "<group>"; };
-		DD7306A82068C0ED00941331 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chime.mp3; path = ../../../Downloads/chime.mp3; sourceTree = "<group>"; };
-		DDE3B52B2068AE9F008A2880 /* golden_rule_intro_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = golden_rule_intro_video.mp4; path = ../../../Downloads/golden_rule_intro_video.mp4; sourceTree = "<group>"; };
 		DDF209A5207D592200A875B0 /* NewsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableView.swift; sourceTree = "<group>"; };
 		DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		DDF68D702065A9DA00C2C595 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		DDF68D722065A9F100C2C595 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		DDF68D742065B6D200C2C595 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../.Trash/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DDF68D762065B74100C2C595 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E6670737409F2675F9CFD4AD /* Pods-GoldenRuleIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,7 +164,6 @@
 		A91ED3071FF42AA500AF1EB8 = {
 			isa = PBXGroup;
 			children = (
-				DDF68D742065B6D200C2C595 /* GoogleService-Info.plist */,
 				A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */,
 				A91ED3291FF42AA500AF1EB8 /* GoldenRuleIOSTests */,
 				A91ED3341FF42AA500AF1EB8 /* GoldenRuleIOSUITests */,
@@ -186,9 +186,7 @@
 		A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */ = {
 			isa = PBXGroup;
 			children = (
-				DD7306A62068C0E200941331 /* fur_elise.mp3 */,
-				DD7306A82068C0ED00941331 /* chime.mp3 */,
-				DDE3B52B2068AE9F008A2880 /* golden_rule_intro_video.mp4 */,
+				AB1A9ADE2082CB0100740CB6 /* GoogleService-Info.plist */,
 				DDF68D722065A9F100C2C595 /* SettingsViewController.swift */,
 				A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */,
 				DD1E29482069651800A6ACDD /* Model.xcdatamodeld */,
@@ -200,6 +198,9 @@
 				DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */,
 				DDF209A5207D592200A875B0 /* NewsTableView.swift */,
 				DDF68D702065A9DA00C2C595 /* InfoViewController.swift */,
+				AB1A9AE42082CC1100740CB6 /* fur_elise.mp3 */,
+				AB1A9AE32082CC1100740CB6 /* golden_rule_intro_video.mp4 */,
+				AB1A9AE12082CC0700740CB6 /* chime.mp3 */,
 				DD483047207864A2006B9573 /* HelpViewController.swift */,
 				DDF68D762065B74100C2C595 /* HomeViewController.swift */,
 				DD0C67502069B2E600F1DFDB /* NewsCell.swift */,
@@ -259,8 +260,6 @@
 				A91ED3221FF42AA500AF1EB8 /* Sources */,
 				A91ED3231FF42AA500AF1EB8 /* Frameworks */,
 				A91ED3241FF42AA500AF1EB8 /* Resources */,
-				E1676732C75DD12B83260667 /* [CP] Embed Pods Frameworks */,
-				2A0BF777B309ACE55B277D41 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,8 +279,6 @@
 				A91ED32D1FF42AA500AF1EB8 /* Sources */,
 				A91ED32E1FF42AA500AF1EB8 /* Frameworks */,
 				A91ED32F1FF42AA500AF1EB8 /* Resources */,
-				B7EEDB600798BB561C14138E /* [CP] Embed Pods Frameworks */,
-				025F1AA20CB97D13BF30F5C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,13 +341,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A91ED3201FF42AA500AF1EB8 /* LaunchScreen.storyboard in Resources */,
-				DD7306A72068C0E200941331 /* fur_elise.mp3 in Resources */,
-				DDF68D752065B6D200C2C595 /* GoogleService-Info.plist in Resources */,
-				A91ED31D1FF42AA500AF1EB8 /* Assets.xcassets in Resources */,
-				DDE3B52C2068AE9F008A2880 /* golden_rule_intro_video.mp4 in Resources */,
-				DD7306A92068C0ED00941331 /* chime.mp3 in Resources */,
-				A91ED31B1FF42AA500AF1EB8 /* Main.storyboard in Resources */,
+				AB1A9AE52082CC1100740CB6 /* golden_rule_intro_video.mp4 in Resources */,
+				AB1A9AE62082CC1100740CB6 /* fur_elise.mp3 in Resources */,
+				AB1A9AE02082CB1600740CB6 /* GoogleService-Info.plist in Resources */,
+				AB1A9ADD2082C98D00740CB6 /* Info.plist in Resources */,
+				AB1A9ADC2082C98900740CB6 /* Main.storyboard in Resources */,
+				AB1A9AE22082CC0700740CB6 /* chime.mp3 in Resources */,
+				AB1A9AD82082C68400740CB6 /* LaunchScreen.storyboard in Resources */,
+				AB1A9AD62082C67D00740CB6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,36 +369,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		025F1AA20CB97D13BF30F5C8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2A0BF777B309ACE55B277D41 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6DE0367FFB7A8FBABA934747 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,21 +471,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B7EEDB600798BB561C14138E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DC890D7F49B2C29ED007676A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,21 +487,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1676732C75DD12B83260667 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED57050DCA732D9E2867A932 /* [CP] Check Pods Manifest.lock */ = {

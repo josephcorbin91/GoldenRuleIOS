@@ -13,16 +13,6 @@ class HomeViewController: UIViewController {
     var notificationGranted=false
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UNUserNotificationCenter.current().requestAuthorization(
-        options: [.alert,.sound]) 
-        { 
-            (granted, error) in
-            self.notificationGranted = granted
-            if let error = error {
-                print("granted, but Error in notification permission:\(error.localizedDescription)")
-        }
-            
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "home")?.draw(in: self.view.bounds)
         
@@ -35,6 +25,29 @@ class HomeViewController: UIViewController {
             
         }
 
+        UNUserNotificationCenter.current().requestAuthorization(
+        options: [.alert,.sound]) 
+        { 
+            (granted, error) in
+            self.notificationGranted = granted
+            if let error = error {
+                print("granted, but Error in notification permission:\(error.localizedDescription)")
+        }
+            
+            
+            /*
+        UIGraphicsBeginImageContext(self.view.frame.size)
+        UIImage(named: "home")?.draw(in: self.view.bounds)
+        
+        if let image = UIGraphicsGetImageFromCurrentImageContext(){
+            UIGraphicsEndImageContext()
+            self.view.backgroundColor = UIColor(patternImage: image)
+        }else{
+            UIGraphicsEndImageContext()
+            debugPrint("Image not available")
+            
+        }
+*/
             if self.notificationGranted{
                 self.repeatNotification()
             }  
