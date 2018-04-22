@@ -9,8 +9,15 @@
 import UIKit
 import UserNotifications
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UNUserNotificationCenterDelegate {
     var notificationGranted=false
+    
+    
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        completionHandler([.alert, .sound])
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         UIGraphicsBeginImageContext(self.view.frame.size)
@@ -25,60 +32,40 @@ class HomeViewController: UIViewController {
             
         }
 
-        UNUserNotificationCenter.current().requestAuthorization(
-        options: [.alert,.sound]) 
-        { 
-            (granted, error) in
-            self.notificationGranted = granted
-            if let error = error {
-                print("granted, but Error in notification permission:\(error.localizedDescription)")
-        }
+        UNUserNotificationCenter.current().requestAuthorization(options: [[.alert, .sound, .badge]], completionHandler: { (granted, error) in
+            // Handle Error
+        })
+        UNUserNotificationCenter.current().delegate = self
+    
             
-            
-            /*
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        UIImage(named: "home")?.draw(in: self.view.bounds)
         
-        if let image = UIGraphicsGetImageFromCurrentImageContext(){
-            UIGraphicsEndImageContext()
-            self.view.backgroundColor = UIColor(patternImage: image)
-        }else{
-            UIGraphicsEndImageContext()
-            debugPrint("Image not available")
-            
-        }
-*/
-            if self.notificationGranted{
-                self.repeatNotification()
-            }  
-        // Do any additional setup after loading the view.
     }
-    }
+    
          func repeatNotification(){
-             
-             var dateComponents = DateComponents()
-// a more realistic example for Gregorian calendar. Every Monday at 11:30AM
-//dateComponents.hour = 11
-//dateComponents.minute = 30
-dateComponents.second = 0
-             let trigger = UNCalendarNotificationTrigger(
-    dateMatching: dateComponents, 
-    repeats: true)
-let content = UNMutableNotificationContent()
-content.title = "Pizza Time!!"
-content.body = "Monday is Pizza Day"
-content.categoryIdentifier = "pizza.reminder.category"
-
-let request = UNNotificationRequest(identifier: "pizza.reminder", content: content, trigger: trigger)
- 
-UNUserNotificationCenter.current().add(request) { (error) in
-    if let error = error {
-        print("error in pizza reminder: \(error.localizedDescription)")
-    }
+            let content = UNMutableNotificationContent()
+            content.title = "Meeting Reminder"
+            content.subtitle = "messageSubtitle"
+            content.body = "Don't forget to bring coffee."
+            content.sound = UNNotificationSound(named: "MySound.aiff")
+            content.badge = 1
+            
+            
+            var date = DateComponents()
+            date.hour = 10
+            date.minute = 25
+            let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+            
+            let requestIdentifier = "demoNotification"
+            let request = UNNotificationRequest(identifier: requestIdentifier,
+                                                content: content, trigger: trigger)
+            
+            UNUserNotificationCenter.current().add(request,
+                                                   withCompletionHandler: { (error) in
+                                                    // Handle error
+            })
 }
-print("added notification:\(request.identifier)")
 
-            }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

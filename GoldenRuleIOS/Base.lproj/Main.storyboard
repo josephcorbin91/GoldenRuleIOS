@@ -29,9 +29,10 @@ Please visit GoldenRuleReminder.com</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYb-5O-NY3">
-                                <rect key="frame" x="30" y="247" width="260" height="150"/>
+                                <rect key="frame" x="60" y="298" width="200" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="ZPR-9I-i9n"/>
+                                    <constraint firstAttribute="height" constant="150" id="a2C-s2-mJY"/>
+                                    <constraint firstAttribute="width" constant="200" id="xSd-Jt-1RN"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="video_image"/>
                                 <connections>
@@ -41,8 +42,8 @@ Please visit GoldenRuleReminder.com</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX5-wH-e5r">
                                 <rect key="frame" x="130" y="488" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="6dz-oW-IE5"/>
-                                    <constraint firstAttribute="width" constant="60" id="p2p-oD-sIP"/>
+                                    <constraint firstAttribute="width" constant="60" id="KcU-46-lpk"/>
+                                    <constraint firstAttribute="height" constant="60" id="wpK-RB-yz0"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="settings_back_image"/>
                                 <connections>
@@ -50,10 +51,7 @@ Please visit GoldenRuleReminder.com</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUi-Ce-6H7">
-                                <rect key="frame" x="10" y="47" width="300" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="TPc-No-5If"/>
-                                </constraints>
+                                <rect key="frame" x="10" y="60" width="300" height="171"/>
                                 <string key="text">The goal of our Golden Rule App™ is to draw attention to the Golden Rule and to world peace – daily. On a planet with so much disharmony, it’s clear that this uniting ethic has been under taught, under publicized, and very often forgotten. So, we have developed a reminder, delivered and connecting people in a unique way, at 1234pm. You can help by using it and telling friends, family, and group leaders. Or, just show them the video below!
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -61,7 +59,7 @@ Please visit GoldenRuleReminder.com</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSF-Vk-DuO">
-                                <rect key="frame" x="10" y="222.5" width="227" height="14.5"/>
+                                <rect key="frame" x="46.5" y="253.5" width="227" height="14.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please visit     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-pK-ZYM">
                                         <rect key="frame" x="0.0" y="0.0" width="81" height="14.5"/>
@@ -76,24 +74,19 @@ Please visit GoldenRuleReminder.com</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="14.5" id="PKe-su-ZeQ"/>
-                                    <constraint firstAttribute="width" constant="227" id="Z2u-X1-aKy"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="UYb-5O-NY3" firstAttribute="top" secondItem="CUi-Ce-6H7" secondAttribute="bottom" constant="20" id="0KV-E7-DY0"/>
-                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="CUi-Ce-6H7" secondAttribute="trailing" constant="10" id="33Z-r7-NcT"/>
-                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="27" id="650-V9-FGK"/>
-                            <constraint firstItem="yX5-wH-e5r" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="7ml-6w-Up4"/>
-                            <constraint firstAttribute="bottom" secondItem="yX5-wH-e5r" secondAttribute="bottom" constant="20" id="89B-KZ-2jB"/>
-                            <constraint firstItem="UYb-5O-NY3" firstAttribute="top" secondItem="LSF-Vk-DuO" secondAttribute="bottom" constant="10" id="Kaf-Qk-osX"/>
-                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="Oao-sF-Odl"/>
-                            <constraint firstItem="UYb-5O-NY3" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="30" id="cdF-47-LNc"/>
-                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="UYb-5O-NY3" secondAttribute="trailing" constant="30" id="iY5-6y-yKP"/>
-                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="wUg-er-fzH"/>
+                            <constraint firstItem="UYb-5O-NY3" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="6Zb-iH-6gT"/>
+                            <constraint firstItem="LSF-Vk-DuO" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="8tm-1I-osp"/>
+                            <constraint firstItem="UYb-5O-NY3" firstAttribute="top" secondItem="LSF-Vk-DuO" secondAttribute="bottom" constant="30" id="Gds-xw-X4I"/>
+                            <constraint firstItem="yX5-wH-e5r" firstAttribute="centerX" secondItem="hEB-V8-ga8" secondAttribute="centerX" id="JLB-aF-vJe"/>
+                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="top" secondItem="szg-bv-rIS" secondAttribute="top" constant="40" id="Udg-lm-4JP"/>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="trailing" secondItem="CUi-Ce-6H7" secondAttribute="trailing" constant="10" id="iTp-x2-pVD"/>
+                            <constraint firstItem="yX5-wH-e5r" firstAttribute="top" secondItem="UYb-5O-NY3" secondAttribute="bottom" constant="40" id="j3M-be-aWQ"/>
+                            <constraint firstItem="szg-bv-rIS" firstAttribute="bottom" secondItem="yX5-wH-e5r" secondAttribute="bottom" constant="20" id="ui4-Ec-MWR"/>
+                            <constraint firstItem="CUi-Ce-6H7" firstAttribute="leading" secondItem="szg-bv-rIS" secondAttribute="leading" constant="10" id="vDe-qS-tHh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="szg-bv-rIS"/>
                     </view>
@@ -115,7 +108,7 @@ Please visit GoldenRuleReminder.com</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NUZ-e1-mZZ">
-                                <rect key="frame" x="10" y="313" width="300" height="155"/>
+                                <rect key="frame" x="10" y="293" width="300" height="155"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WN2-24-B96">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="31"/>
@@ -211,12 +204,7 @@ Please visit GoldenRuleReminder.com</string>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="kyp-Ym-qkk" secondAttribute="trailing" id="2QX-ac-S1A"/>
-                                    <constraint firstItem="kyp-Ym-qkk" firstAttribute="leading" secondItem="NUZ-e1-mZZ" secondAttribute="leading" id="5tl-TT-awb"/>
                                     <constraint firstItem="9Wt-1P-LZG" firstAttribute="top" secondItem="kyp-Ym-qkk" secondAttribute="bottom" constant="10" id="Tag-iu-KCf"/>
-                                    <constraint firstItem="WN2-24-B96" firstAttribute="top" secondItem="NUZ-e1-mZZ" secondAttribute="top" constant="10" id="dox-v5-2Wb"/>
-                                    <constraint firstItem="WN2-24-B96" firstAttribute="leading" secondItem="NUZ-e1-mZZ" secondAttribute="leading" id="kUi-lG-gae"/>
-                                    <constraint firstAttribute="trailing" secondItem="WN2-24-B96" secondAttribute="trailing" id="oYP-1A-IqG"/>
                                     <constraint firstItem="kyp-Ym-qkk" firstAttribute="top" secondItem="WN2-24-B96" secondAttribute="bottom" constant="10" id="ocR-wz-CLw"/>
                                     <constraint firstItem="kyp-Ym-qkk" firstAttribute="top" secondItem="WN2-24-B96" secondAttribute="bottom" constant="10" id="ywm-5R-fNf"/>
                                 </constraints>
@@ -236,10 +224,10 @@ Please visit GoldenRuleReminder.com</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="anP-cQ-oCm" firstAttribute="centerX" secondItem="erk-j6-0Df" secondAttribute="centerX" id="036-JY-LIv"/>
-                            <constraint firstItem="anP-cQ-oCm" firstAttribute="top" secondItem="NUZ-e1-mZZ" secondAttribute="bottom" constant="20" id="23K-VF-maz"/>
-                            <constraint firstItem="NUZ-e1-mZZ" firstAttribute="leading" secondItem="WgJ-zb-FwC" secondAttribute="leading" constant="10" id="Kgj-j2-stJ"/>
-                            <constraint firstItem="WgJ-zb-FwC" firstAttribute="trailing" secondItem="NUZ-e1-mZZ" secondAttribute="trailing" constant="10" id="l2G-wg-LDr"/>
+                            <constraint firstItem="WgJ-zb-FwC" firstAttribute="trailing" secondItem="NUZ-e1-mZZ" secondAttribute="trailing" constant="10" id="48k-rf-M3g"/>
+                            <constraint firstItem="NUZ-e1-mZZ" firstAttribute="leading" secondItem="WgJ-zb-FwC" secondAttribute="leading" constant="10" id="WPU-qC-zhg"/>
                             <constraint firstItem="WgJ-zb-FwC" firstAttribute="bottom" secondItem="anP-cQ-oCm" secondAttribute="bottom" constant="20" id="mIA-KL-Ufb"/>
+                            <constraint firstItem="anP-cQ-oCm" firstAttribute="top" secondItem="NUZ-e1-mZZ" secondAttribute="bottom" constant="40" id="sap-Zi-amv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WgJ-zb-FwC"/>
                     </view>
@@ -542,6 +530,6 @@ For details visit:  GoldenRuleReminder.com</string>
         <image name="video_image" width="1218" height="824"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hPL-4W-cUO"/>
+        <segue reference="Hxg-xo-9P3"/>
     </inferredMetricsTieBreakers>
 </document>
