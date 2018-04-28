@@ -8,14 +8,71 @@
 
 import UIKit
 import AVFoundation
-
+import UserNotifications
 
 class SettingsViewController: UIViewController {
 var player: AVAudioPlayer?
 
     
+    func repeatNotification(){
+        
+        printVariables()
+        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["alarmNotification"])
+        var sponsor = UserDefaults.standard.string(forKey: "Sponsored")
+
+        var soundMusic = UserDefaults.standard.bool(forKey: "SoundMusic")
+        var SoundChime = UserDefaults.standard.bool(forKey: "SoundChime")
+        var Vibration = UserDefaults.standard.bool(forKey: "Vibration")
+        var SponsoredNotification = UserDefaults.standard.bool(forKey: "Sponsored Notification")
+        var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
+        let content = UNMutableNotificationContent()
+        content.title = "Global Peace Minute    1234pm Daily"
+        content.body="Treat others as you would like to be treated."
+        
+        if(DefaultNotification && !SponsoredNotification){
+            
+        }
+        if(SponsoredNotification && !DefaultNotification){
+            
+            let sponsorText = "Co-Sponsored by : "+sponsor!
+            content.subtitle = sponsorText
+
+        }
+        
+        
+        if(soundMusic){
+            content.sound = UNNotificationSound(named: "music.wav")
+        }
+        else if(SoundChime){
+            content.sound = UNNotificationSound(named: "chime.wav")
+            
+        }
+        
+        
+        //content.badge = 1
+        
+        
+        var date = DateComponents()
+        date.hour = 12
+        date.minute = 26
+        //let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        
+        let requestIdentifier = "alarmNotification"
+        let request = UNNotificationRequest(identifier: requestIdentifier,
+                                            content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request,
+                                               withCompletionHandler: { (error) in
+                                                // Handle error
+        })
+    }
+    
+    
+    
+    
     func playSoundChime(){
-         guard let url = Bundle.main.url(forResource: "chime", withExtension: "mp3") else { return }
+         guard let url = Bundle.main.url(forResource: "chime", withExtension: "wav") else { return }
 
     do {
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -38,10 +95,12 @@ var player: AVAudioPlayer?
     }
     }
      func stopSoundChime(){
+        guard let player = player else { return }
         
+        player.stop()
     }
     func playSoundMusic(){
-         guard let url = Bundle.main.url(forResource: "fur_elise", withExtension: "mp3") else { return }
+         guard let url = Bundle.main.url(forResource: "music", withExtension: "wav") else { return }
 
     do {
         try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -65,7 +124,9 @@ var player: AVAudioPlayer?
         
     }
      func stopSoundMusic(){
+        guard let player = player else { return }
         
+        player.stop()
     }
     func vibrate(){
                 AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))            
@@ -74,11 +135,14 @@ var player: AVAudioPlayer?
     @IBOutlet weak var SoundChime: UISwitch!
     @IBOutlet weak var SoundMusic: UISwitch!
     @IBOutlet weak var OnScreenNotificationsSwitch: UISwitch!
-    @IBOutlet weak var VibrationsSwitch: UISwitch!
+   // @IBOutlet weak var VibrationsSwitch: UISwitch!
     @IBOutlet weak var SponsorSwitch: UISwitch!
     @IBAction func SoundChime(_ sender: Any) {
         if SoundChime.isOn{
-            UserDefaults.standard.set(true, forKey: "SoundChime") //Bool
+            UserDefaults.standard.set(true, forKey: "SoundChime")
+            
+            //Bool
+            
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
 playSoundChime()
             SoundMusic.setOn(false, animated: false)
@@ -91,6 +155,7 @@ stopSoundChime()
 
 
         }
+        repeatNotification()
     
 
     }
@@ -107,8 +172,11 @@ playSoundMusic()
 stopSoundMusic()
 
         }
+        repeatNotification()
     }
+    /*
     @IBAction func Vibrations(_ sender: Any) {
+     
         if VibrationsSwitch.isOn{
             AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
             UserDefaults.standard.set(true, forKey: "Vibration") //Bool
@@ -118,24 +186,40 @@ stopSoundMusic()
 
         }
     }
+ */
     @IBAction func OnScreenNotifications(_ sender: Any) {
         
         if OnScreenNotificationsSwitch.isOn{
         print("default on")
-        let alert = DefaultNotificationAlert(title: "Default Notification", image: UIImage(named: "background_settings.png")!)
+            UserDefaults.standard.set(true, forKey: "Default Notification") //Bool
+
+        let alert = DefaultNotificationAlert(title: "Default Notification", image: UIImage(named: "no_sponsor")!)
         
         alert.show(animated: true)
             SponsorSwitch.setOn(false, animated: false)
+        }else{
+            UserDefaults.standard.set(false, forKey: "Default Notification") //Bool
+
         }
+        repeatNotification()
     }
     @IBAction func Sponsor(_ sender: Any) {
         if SponsorSwitch.isOn{
+            UserDefaults.standard.set(true, forKey: "Sponsored Notification") //Bool
+
             print("default on")
-            let alert = SponsoredNotificationAlert(title: "Sponsored Notification", image: UIImage(named: "background_settings.png")!)
+            let alert = DefaultNotificationAlert(title: "Sponsored Notification", image: UIImage(named: "sponsor")!)
             
             alert.show(animated: true)
             OnScreenNotificationsSwitch.setOn(false, animated: false)
-        }    }
+        }
+        else{
+            UserDefaults.standard.set(false, forKey: "Sponsored Notification") //Bool
+            UserDefaults.standard.set("", forKey: "Sponsored") //Bool
+
+        }
+        repeatNotification()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
      
@@ -159,6 +243,19 @@ stopSoundMusic()
     }
     
 
+    func printVariables(){
+
+        var sponsor = UserDefaults.standard.string(forKey: "Sponsored")
+        var soundMusic = UserDefaults.standard.bool(forKey: "SoundMusic")
+        var SoundChime = UserDefaults.standard.bool(forKey: "SoundChime")
+        var Vibration = UserDefaults.standard.bool(forKey: "Vibration")
+        var SponsoredNotification = UserDefaults.standard.bool(forKey: "Sponsored Notification")
+        var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
+        
+        print("SoundMusic " + String(soundMusic) + "SoundCime " + String(SoundChime) + "Vibration "+String(Vibration) + "Sponsoerd Notification "+String(SponsoredNotification) + "Default Notification " + String(DefaultNotification))
+        print(" Sponsor is " + sponsor!)
+        
+    }
     /*
     // MARK: - Navigation
 

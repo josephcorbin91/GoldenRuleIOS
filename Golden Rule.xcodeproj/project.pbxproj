@@ -1,0 +1,913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		370933E41A520BDD3FAC860E /* Pods_Golden_Rule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0415306375011B422525952E /* Pods_Golden_Rule.framework */; };
+		6EF2D794525E7DCB2D214249 /* Pods_Golden_RuleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061A3B334FE76E8949E6270C /* Pods_Golden_RuleTests.framework */; };
+		A91ED3141FF42AA500AF1EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */; };
+		A91ED32B1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED32A1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift */; };
+		A91ED3361FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */; };
+		AB1A9AD62082C67D00740CB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */; };
+		AB1A9AD82082C68400740CB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */; };
+		AB1A9ADC2082C98900740CB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91ED3191FF42AA500AF1EB8 /* Main.storyboard */; };
+		AB1A9ADD2082C98D00740CB6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A91ED3211FF42AA500AF1EB8 /* Info.plist */; };
+		AB1A9AE02082CB1600740CB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB1A9ADE2082CB0100740CB6 /* GoogleService-Info.plist */; };
+		AB1A9AE52082CC1100740CB6 /* golden_rule_intro_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AB1A9AE32082CC1100740CB6 /* golden_rule_intro_video.mp4 */; };
+		AB2168FD208D0135004CF306 /* chime.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB2168FA208D00F6004CF306 /* chime.wav */; };
+		AB2168FE208D0135004CF306 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB2168FB208D011E004CF306 /* music.wav */; };
+		AB216900208D5328004CF306 /* no_sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2168FF208D5328004CF306 /* no_sponsor.png */; };
+		AB216904208D5EB5004CF306 /* sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB216903208D5EB5004CF306 /* sponsor.png */; };
+		AB216906208D68E8004CF306 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB216905208D68E8004CF306 /* Alarm.swift */; };
+		AC2B63E311B5ADAFBE901978 /* Pods_Golden_RuleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6181EC4BD36EB854704AD0 /* Pods_Golden_RuleUITests.framework */; };
+		D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */; };
+		DD0C67512069B2E600F1DFDB /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C67502069B2E600F1DFDB /* NewsCell.swift */; };
+		DD1E294A2069651800A6ACDD /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD1E29482069651800A6ACDD /* Model.xcdatamodeld */; };
+		DD483048207864A2006B9573 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD483047207864A2006B9573 /* HelpViewController.swift */; };
+		DD48304A20786884006B9573 /* Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48304920786884006B9573 /* Modal.swift */; };
+		DD48304C20786901006B9573 /* SposoredNotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48304B20786901006B9573 /* SposoredNotificationAlert.swift */; };
+		DD48304E20786F22006B9573 /* DefaultNotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD48304D20786F22006B9573 /* DefaultNotificationAlert.swift */; };
+		DDF209A6207D592200A875B0 /* NewsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF209A5207D592200A875B0 /* NewsTableView.swift */; };
+		DDF68D6F2065A9C500C2C595 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */; };
+		DDF68D712065A9DA00C2C595 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D702065A9DA00C2C595 /* InfoViewController.swift */; };
+		DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D722065A9F100C2C595 /* SettingsViewController.swift */; };
+		DDF68D772065B74100C2C595 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF68D762065B74100C2C595 /* HomeViewController.swift */; };
+		E4C1A8F1000A502DAF35CB46 /* Pods_GoldenRuleIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A91ED3271FF42AA500AF1EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91ED3081FF42AA500AF1EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91ED30F1FF42AA500AF1EB8;
+			remoteInfo = GoldenRuleIOS;
+		};
+		A91ED3321FF42AA500AF1EB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A91ED3081FF42AA500AF1EB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A91ED30F1FF42AA500AF1EB8;
+			remoteInfo = GoldenRuleIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0415306375011B422525952E /* Pods_Golden_Rule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golden_Rule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		061A3B334FE76E8949E6270C /* Pods_Golden_RuleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golden_RuleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABC2401A4D7983873563DDE /* Pods-GoldenRuleIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		10B7C60E0C8C86B13E67DDF3 /* Pods-GoldenRuleIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenRuleIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6CA4E69EC7490923558216 /* Pods-GoldenRuleIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2510BB5389686B92302A726E /* Pods-GoldenRuleIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A6181EC4BD36EB854704AD0 /* Pods_Golden_RuleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Golden_RuleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1E5CD0A8F36BD26809B54A /* Pods-Golden RuleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden RuleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golden RuleUITests/Pods-Golden RuleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		351EDDA8CFA82E555BE00FBA /* Pods-Golden Rule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden Rule.release.xcconfig"; path = "Pods/Target Support Files/Pods-Golden Rule/Pods-Golden Rule.release.xcconfig"; sourceTree = "<group>"; };
+		5198516E05A53C50A477827B /* Pods-GoldenRuleIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54FB895C4810A42DECF10B95 /* Pods-GoldenRuleIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSUITests/Pods-GoldenRuleIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenRuleIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF20494393C0096691BCFD5 /* Pods_GoldenRuleIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenRuleIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBBF67A1F97E41A2614D422 /* Pods-GoldenRuleIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		651AE81C873291EC91FBEAAA /* Pods-Golden RuleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden RuleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Golden RuleUITests/Pods-Golden RuleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6CD9B377A40A5A073DCF0445 /* Pods-GoldenRuleIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS.release.xcconfig"; sourceTree = "<group>"; };
+		7241A06D0CCD5E64876DF568 /* Pods-GoldenRuleIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS.release.xcconfig"; sourceTree = "<group>"; };
+		96DC478BA5F430CDE6A50D7D /* Pods-Golden Rule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden Rule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golden Rule/Pods-Golden Rule.debug.xcconfig"; sourceTree = "<group>"; };
+		A47ED61EDE004695AFB5485D /* Pods-GoldenRuleIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOS/Pods-GoldenRuleIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A91ED3101FF42AA500AF1EB8 /* Golden Rule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golden Rule.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A91ED31A1FF42AA500AF1EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A91ED31F1FF42AA500AF1EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A91ED3211FF42AA500AF1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91ED3261FF42AA500AF1EB8 /* Golden RuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Golden RuleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91ED32A1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenRuleIOSTests.swift; sourceTree = "<group>"; };
+		A91ED32C1FF42AA500AF1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91ED3311FF42AA500AF1EB8 /* Golden RuleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Golden RuleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenRuleIOSUITests.swift; sourceTree = "<group>"; };
+		A91ED3371FF42AA500AF1EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB1A9ADE2082CB0100740CB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB1A9AE12082CC0700740CB6 /* chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chime.mp3; sourceTree = "<group>"; };
+		AB1A9AE32082CC1100740CB6 /* golden_rule_intro_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = golden_rule_intro_video.mp4; sourceTree = "<group>"; };
+		AB1A9AE42082CC1100740CB6 /* fur_elise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fur_elise.mp3; sourceTree = "<group>"; };
+		AB1E60EE208ECCB50040666B /* Golden Rule.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Golden Rule.entitlements"; sourceTree = "<group>"; };
+		AB2168FA208D00F6004CF306 /* chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime.wav; sourceTree = "<group>"; };
+		AB2168FB208D011E004CF306 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = music.wav; path = ../../../Downloads/music.wav; sourceTree = "<group>"; };
+		AB2168FF208D5328004CF306 /* no_sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no_sponsor.png; path = ../../no_sponsor.png; sourceTree = "<group>"; };
+		AB216903208D5EB5004CF306 /* sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsor.png; path = ../../../Desktop/sponsor.png; sourceTree = "<group>"; };
+		AB216905208D68E8004CF306 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		D4E34F4A2CDB670E07C3834F /* Pods-Golden RuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden RuleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golden RuleTests/Pods-Golden RuleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD0C67502069B2E600F1DFDB /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		DD1E29492069651800A6ACDD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		DD483047207864A2006B9573 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		DD48304920786884006B9573 /* Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal.swift; sourceTree = "<group>"; };
+		DD48304B20786901006B9573 /* SposoredNotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SposoredNotificationAlert.swift; sourceTree = "<group>"; };
+		DD48304D20786F22006B9573 /* DefaultNotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNotificationAlert.swift; sourceTree = "<group>"; };
+		DDF209A5207D592200A875B0 /* NewsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableView.swift; sourceTree = "<group>"; };
+		DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		DDF68D702065A9DA00C2C595 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		DDF68D722065A9F100C2C595 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DDF68D762065B74100C2C595 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E6670737409F2675F9CFD4AD /* Pods-GoldenRuleIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenRuleIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenRuleIOSTests/Pods-GoldenRuleIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F76D040C7CF46FCB38830486 /* Pods-Golden RuleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden RuleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Golden RuleTests/Pods-Golden RuleTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A91ED30D1FF42AA500AF1EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				370933E41A520BDD3FAC860E /* Pods_Golden_Rule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91ED3231FF42AA500AF1EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */,
+				6EF2D794525E7DCB2D214249 /* Pods_Golden_RuleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91ED32E1FF42AA500AF1EB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C1A8F1000A502DAF35CB46 /* Pods_GoldenRuleIOSUITests.framework in Frameworks */,
+				AC2B63E311B5ADAFBE901978 /* Pods_Golden_RuleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F84F607ECF60EAC4B261B8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A47ED61EDE004695AFB5485D /* Pods-GoldenRuleIOS.debug.xcconfig */,
+				7241A06D0CCD5E64876DF568 /* Pods-GoldenRuleIOS.release.xcconfig */,
+				2510BB5389686B92302A726E /* Pods-GoldenRuleIOSTests.debug.xcconfig */,
+				E6670737409F2675F9CFD4AD /* Pods-GoldenRuleIOSTests.release.xcconfig */,
+				0ABC2401A4D7983873563DDE /* Pods-GoldenRuleIOSUITests.debug.xcconfig */,
+				54FB895C4810A42DECF10B95 /* Pods-GoldenRuleIOSUITests.release.xcconfig */,
+				96DC478BA5F430CDE6A50D7D /* Pods-Golden Rule.debug.xcconfig */,
+				351EDDA8CFA82E555BE00FBA /* Pods-Golden Rule.release.xcconfig */,
+				D4E34F4A2CDB670E07C3834F /* Pods-Golden RuleTests.debug.xcconfig */,
+				F76D040C7CF46FCB38830486 /* Pods-Golden RuleTests.release.xcconfig */,
+				2B1E5CD0A8F36BD26809B54A /* Pods-Golden RuleUITests.debug.xcconfig */,
+				651AE81C873291EC91FBEAAA /* Pods-Golden RuleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2EC2B07F583BCB8DDCE6F09C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CF20494393C0096691BCFD5 /* Pods_GoldenRuleIOS.framework */,
+				1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */,
+				5996695276825CB2BAED5DD6 /* Pods_GoldenRuleIOSUITests.framework */,
+				0415306375011B422525952E /* Pods_Golden_Rule.framework */,
+				061A3B334FE76E8949E6270C /* Pods_Golden_RuleTests.framework */,
+				2A6181EC4BD36EB854704AD0 /* Pods_Golden_RuleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A06D0260C11C137C4E1AD89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FBBF67A1F97E41A2614D422 /* Pods-GoldenRuleIOS.debug.xcconfig */,
+				6CD9B377A40A5A073DCF0445 /* Pods-GoldenRuleIOS.release.xcconfig */,
+				AA8F1C19522FD21A80535E63 /* Pods-GoldenRuleIOSTests.debug.xcconfig */,
+				1F6CA4E69EC7490923558216 /* Pods-GoldenRuleIOSTests.release.xcconfig */,
+				10B7C60E0C8C86B13E67DDF3 /* Pods-GoldenRuleIOSUITests.debug.xcconfig */,
+				5198516E05A53C50A477827B /* Pods-GoldenRuleIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A91ED3071FF42AA500AF1EB8 = {
+			isa = PBXGroup;
+			children = (
+				AB1E60EE208ECCB50040666B /* Golden Rule.entitlements */,
+				A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */,
+				A91ED3291FF42AA500AF1EB8 /* GoldenRuleIOSTests */,
+				A91ED3341FF42AA500AF1EB8 /* GoldenRuleIOSUITests */,
+				A91ED3111FF42AA500AF1EB8 /* Products */,
+				2EC2B07F583BCB8DDCE6F09C /* Frameworks */,
+				1F84F607ECF60EAC4B261B8D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A91ED3111FF42AA500AF1EB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A91ED3101FF42AA500AF1EB8 /* Golden Rule.app */,
+				A91ED3261FF42AA500AF1EB8 /* Golden RuleTests.xctest */,
+				A91ED3311FF42AA500AF1EB8 /* Golden RuleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */ = {
+			isa = PBXGroup;
+			children = (
+				AB216903208D5EB5004CF306 /* sponsor.png */,
+				AB2168FA208D00F6004CF306 /* chime.wav */,
+				AB2168FB208D011E004CF306 /* music.wav */,
+				AB1A9ADE2082CB0100740CB6 /* GoogleService-Info.plist */,
+				DDF68D722065A9F100C2C595 /* SettingsViewController.swift */,
+				A91ED3131FF42AA500AF1EB8 /* AppDelegate.swift */,
+				DD1E29482069651800A6ACDD /* Model.xcdatamodeld */,
+				A91ED3191FF42AA500AF1EB8 /* Main.storyboard */,
+				A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */,
+				6A06D0260C11C137C4E1AD89 /* Pods */,
+				A91ED3211FF42AA500AF1EB8 /* Info.plist */,
+				A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */,
+				DDF68D6E2065A9C500C2C595 /* NewsViewController.swift */,
+				DDF209A5207D592200A875B0 /* NewsTableView.swift */,
+				DDF68D702065A9DA00C2C595 /* InfoViewController.swift */,
+				AB1A9AE42082CC1100740CB6 /* fur_elise.mp3 */,
+				AB1A9AE32082CC1100740CB6 /* golden_rule_intro_video.mp4 */,
+				AB1A9AE12082CC0700740CB6 /* chime.mp3 */,
+				DD483047207864A2006B9573 /* HelpViewController.swift */,
+				DDF68D762065B74100C2C595 /* HomeViewController.swift */,
+				AB2168FF208D5328004CF306 /* no_sponsor.png */,
+				DD0C67502069B2E600F1DFDB /* NewsCell.swift */,
+				DD48304920786884006B9573 /* Modal.swift */,
+				DD48304B20786901006B9573 /* SposoredNotificationAlert.swift */,
+				DD48304D20786F22006B9573 /* DefaultNotificationAlert.swift */,
+				AB216905208D68E8004CF306 /* Alarm.swift */,
+			);
+			path = GoldenRuleIOS;
+			sourceTree = "<group>";
+		};
+		A91ED3291FF42AA500AF1EB8 /* GoldenRuleIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				A91ED32A1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift */,
+				A91ED32C1FF42AA500AF1EB8 /* Info.plist */,
+			);
+			path = GoldenRuleIOSTests;
+			sourceTree = "<group>";
+		};
+		A91ED3341FF42AA500AF1EB8 /* GoldenRuleIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A91ED3351FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift */,
+				A91ED3371FF42AA500AF1EB8 /* Info.plist */,
+			);
+			path = GoldenRuleIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A91ED30F1FF42AA500AF1EB8 /* Golden Rule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91ED33A1FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "Golden Rule" */;
+			buildPhases = (
+				AEB45BE30329CFB301E2D742 /* [CP] Check Pods Manifest.lock */,
+				A91ED30C1FF42AA500AF1EB8 /* Sources */,
+				A91ED30D1FF42AA500AF1EB8 /* Frameworks */,
+				A91ED30E1FF42AA500AF1EB8 /* Resources */,
+				6DE0367FFB7A8FBABA934747 /* [CP] Embed Pods Frameworks */,
+				B5DC6B5097891F145D5A754D /* [CP] Copy Pods Resources */,
+				AB8092E3208D8E28005470F8 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Golden Rule";
+			productName = GoldenRuleIOS;
+			productReference = A91ED3101FF42AA500AF1EB8 /* Golden Rule.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A91ED3251FF42AA500AF1EB8 /* Golden RuleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91ED33D1FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "Golden RuleTests" */;
+			buildPhases = (
+				DC890D7F49B2C29ED007676A /* [CP] Check Pods Manifest.lock */,
+				A91ED3221FF42AA500AF1EB8 /* Sources */,
+				A91ED3231FF42AA500AF1EB8 /* Frameworks */,
+				A91ED3241FF42AA500AF1EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91ED3281FF42AA500AF1EB8 /* PBXTargetDependency */,
+			);
+			name = "Golden RuleTests";
+			productName = GoldenRuleIOSTests;
+			productReference = A91ED3261FF42AA500AF1EB8 /* Golden RuleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A91ED3301FF42AA500AF1EB8 /* Golden RuleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A91ED3401FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "Golden RuleUITests" */;
+			buildPhases = (
+				ED57050DCA732D9E2867A932 /* [CP] Check Pods Manifest.lock */,
+				A91ED32D1FF42AA500AF1EB8 /* Sources */,
+				A91ED32E1FF42AA500AF1EB8 /* Frameworks */,
+				A91ED32F1FF42AA500AF1EB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A91ED3331FF42AA500AF1EB8 /* PBXTargetDependency */,
+			);
+			name = "Golden RuleUITests";
+			productName = GoldenRuleIOSUITests;
+			productReference = A91ED3311FF42AA500AF1EB8 /* Golden RuleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A91ED3081FF42AA500AF1EB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = JohnTuttle;
+				TargetAttributes = {
+					A91ED30F1FF42AA500AF1EB8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					A91ED3251FF42AA500AF1EB8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A91ED30F1FF42AA500AF1EB8;
+					};
+					A91ED3301FF42AA500AF1EB8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A91ED30F1FF42AA500AF1EB8;
+					};
+				};
+			};
+			buildConfigurationList = A91ED30B1FF42AA500AF1EB8 /* Build configuration list for PBXProject "Golden Rule" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A91ED3071FF42AA500AF1EB8;
+			productRefGroup = A91ED3111FF42AA500AF1EB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A91ED30F1FF42AA500AF1EB8 /* Golden Rule */,
+				A91ED3251FF42AA500AF1EB8 /* Golden RuleTests */,
+				A91ED3301FF42AA500AF1EB8 /* Golden RuleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A91ED30E1FF42AA500AF1EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2168FD208D0135004CF306 /* chime.wav in Resources */,
+				AB2168FE208D0135004CF306 /* music.wav in Resources */,
+				AB1A9AE52082CC1100740CB6 /* golden_rule_intro_video.mp4 in Resources */,
+				AB1A9AE02082CB1600740CB6 /* GoogleService-Info.plist in Resources */,
+				AB216900208D5328004CF306 /* no_sponsor.png in Resources */,
+				AB1A9ADD2082C98D00740CB6 /* Info.plist in Resources */,
+				AB1A9ADC2082C98900740CB6 /* Main.storyboard in Resources */,
+				AB1A9AD82082C68400740CB6 /* LaunchScreen.storyboard in Resources */,
+				AB216904208D5EB5004CF306 /* sponsor.png in Resources */,
+				AB1A9AD62082C67D00740CB6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91ED3241FF42AA500AF1EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91ED32F1FF42AA500AF1EB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DE0367FFB7A8FBABA934747 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Golden Rule/Pods-Golden Rule-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Golden Rule/Pods-Golden Rule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB8092E3208D8E28005470F8 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ed9e7052cf48b16f447e89f9ee32e34417211a7a 136be1a0adf6080333f40e0e250fd35f245394bad9e9f29cd8505dc2907ac5ec";
+		};
+		AEB45BE30329CFB301E2D742 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Golden Rule-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5DC6B5097891F145D5A754D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Golden Rule/Pods-Golden Rule-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Golden Rule/Pods-Golden Rule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC890D7F49B2C29ED007676A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Golden RuleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED57050DCA732D9E2867A932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Golden RuleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A91ED30C1FF42AA500AF1EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD48304C20786901006B9573 /* SposoredNotificationAlert.swift in Sources */,
+				DDF68D772065B74100C2C595 /* HomeViewController.swift in Sources */,
+				DDF209A6207D592200A875B0 /* NewsTableView.swift in Sources */,
+				A91ED3141FF42AA500AF1EB8 /* AppDelegate.swift in Sources */,
+				DDF68D712065A9DA00C2C595 /* InfoViewController.swift in Sources */,
+				DD483048207864A2006B9573 /* HelpViewController.swift in Sources */,
+				DDF68D6F2065A9C500C2C595 /* NewsViewController.swift in Sources */,
+				DD48304E20786F22006B9573 /* DefaultNotificationAlert.swift in Sources */,
+				AB216906208D68E8004CF306 /* Alarm.swift in Sources */,
+				DDF68D732065A9F100C2C595 /* SettingsViewController.swift in Sources */,
+				DD0C67512069B2E600F1DFDB /* NewsCell.swift in Sources */,
+				DD48304A20786884006B9573 /* Modal.swift in Sources */,
+				DD1E294A2069651800A6ACDD /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91ED3221FF42AA500AF1EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91ED32B1FF42AA500AF1EB8 /* GoldenRuleIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91ED32D1FF42AA500AF1EB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A91ED3361FF42AA500AF1EB8 /* GoldenRuleIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A91ED3281FF42AA500AF1EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91ED30F1FF42AA500AF1EB8 /* Golden Rule */;
+			targetProxy = A91ED3271FF42AA500AF1EB8 /* PBXContainerItemProxy */;
+		};
+		A91ED3331FF42AA500AF1EB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A91ED30F1FF42AA500AF1EB8 /* Golden Rule */;
+			targetProxy = A91ED3321FF42AA500AF1EB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A91ED3191FF42AA500AF1EB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91ED31A1FF42AA500AF1EB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91ED31F1FF42AA500AF1EB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A91ED3381FF42AA600AF1EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A91ED3391FF42AA600AF1EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A91ED33B1FF42AA600AF1EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96DC478BA5F430CDE6A50D7D /* Pods-Golden Rule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Golden Rule.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ACNBWNFA8;
+				INFOPLIST_FILE = GoldenRuleIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldenrule.ios;
+				PRODUCT_NAME = "Golden Rule";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A91ED33C1FF42AA600AF1EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 351EDDA8CFA82E555BE00FBA /* Pods-Golden Rule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Golden Rule.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ACNBWNFA8;
+				INFOPLIST_FILE = GoldenRuleIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goldenrule.ios;
+				PRODUCT_NAME = "Golden Rule";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A91ED33E1FF42AA600AF1EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E34F4A2CDB670E07C3834F /* Pods-Golden RuleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoldenRuleIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoldenRuleIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golden Rule.app/Golden Rule";
+			};
+			name = Debug;
+		};
+		A91ED33F1FF42AA600AF1EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76D040C7CF46FCB38830486 /* Pods-Golden RuleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoldenRuleIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoldenRuleIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golden Rule.app/Golden Rule";
+			};
+			name = Release;
+		};
+		A91ED3411FF42AA600AF1EB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1E5CD0A8F36BD26809B54A /* Pods-Golden RuleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoldenRuleIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoldenRuleIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoldenRuleIOS;
+			};
+			name = Debug;
+		};
+		A91ED3421FF42AA600AF1EB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 651AE81C873291EC91FBEAAA /* Pods-Golden RuleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GoldenRuleIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.GoldenRuleIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoldenRuleIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A91ED30B1FF42AA500AF1EB8 /* Build configuration list for PBXProject "Golden Rule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91ED3381FF42AA600AF1EB8 /* Debug */,
+				A91ED3391FF42AA600AF1EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91ED33A1FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "Golden Rule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91ED33B1FF42AA600AF1EB8 /* Debug */,
+				A91ED33C1FF42AA600AF1EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91ED33D1FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "Golden RuleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91ED33E1FF42AA600AF1EB8 /* Debug */,
+				A91ED33F1FF42AA600AF1EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A91ED3401FF42AA600AF1EB8 /* Build configuration list for PBXNativeTarget "Golden RuleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A91ED3411FF42AA600AF1EB8 /* Debug */,
+				A91ED3421FF42AA600AF1EB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD1E29482069651800A6ACDD /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD1E29492069651800A6ACDD /* Model.xcdatamodel */,
+			);
+			currentVersion = DD1E29492069651800A6ACDD /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A91ED3081FF42AA500AF1EB8 /* Project object */;
+}

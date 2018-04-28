@@ -9,7 +9,6 @@
 import UIKit
 
 //
-import UIKit
 
 class SponsoredNotificationAlert: UIView, Modal {
     var backgroundView = UIView()
