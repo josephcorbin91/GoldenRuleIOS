@@ -15,7 +15,7 @@
         <!--Info View Controller-->
         <scene sceneID="Q42-CW-bPK">
             <objects>
-                <viewController id="u56-KQ-Hak" customClass="InfoViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u56-KQ-Hak" customClass="InfoViewController" customModule="Golden_Rule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hEB-V8-ga8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,7 @@ Please visit GoldenRuleReminder.com</string>
         <!--Settings View Controller-->
         <scene sceneID="U7H-4O-WBc">
             <objects>
-                <viewController id="OJg-BF-j3L" customClass="SettingsViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OJg-BF-j3L" customClass="SettingsViewController" customModule="Golden_Rule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="erk-j6-0Df">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +225,7 @@ Please visit GoldenRuleReminder.com</string>
         <!--Help View Controller-->
         <scene sceneID="71P-xA-73O">
             <objects>
-                <viewController id="aqF-5N-o6g" customClass="HelpViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aqF-5N-o6g" customClass="HelpViewController" customModule="Golden_Rule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N9P-Ie-dgD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +285,7 @@ For details visit:  GoldenRuleReminder.com</string>
         <!--News View Controller-->
         <scene sceneID="D0G-xh-E8j">
             <objects>
-                <viewController id="qib-sT-zhp" customClass="NewsViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qib-sT-zhp" customClass="NewsViewController" customModule="Golden_Rule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ax-QY-0Ad">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -295,7 +295,7 @@ For details visit:  GoldenRuleReminder.com</string>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsItemIdentifier" rowHeight="220" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="GoldenRuleIOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsItemIdentifier" rowHeight="220" id="m5i-mb-5rV" userLabel="NewsCell" customClass="NewsCell" customModule="Golden_Rule" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="394" height="220"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m5i-mb-5rV" id="1w5-An-upH">
@@ -393,19 +393,19 @@ For details visit:  GoldenRuleReminder.com</string>
         <!--Home View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="GoldenRuleIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="Golden_Rule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIF-rp-q77">
-                                <rect key="frame" x="0.0" y="400" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="321.33333333333337" width="414" height="80.333333333333314"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RIs-z2-nbc">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.33333333333337123" width="138" height="80.333333333333329"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ava-KU-U3U">
-                                                <rect key="frame" x="39" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="39" y="0.33333333333337123" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="MLZ-if-rBG"/>
                                                     <constraint firstAttribute="width" constant="60" id="Zgf-8m-C9J"/>
@@ -416,22 +416,22 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-iw-1S5">
-                                                <rect key="frame" x="54.666666666666657" y="79.666666666666629" width="29" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="48.666666666666671" y="60.333333333333321" width="40.666666666666671" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="FQJ-Ll-VAo"/>
+                                            <constraint firstAttribute="height" constant="80" id="FQJ-Ll-VAo"/>
                                             <constraint firstItem="ava-KU-U3U" firstAttribute="top" secondItem="RIs-z2-nbc" secondAttribute="top" id="Ljm-Le-cAj"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gMl-Z7-SDD">
-                                        <rect key="frame" x="138" y="0.0" width="138.66666666666663" height="100"/>
+                                        <rect key="frame" x="138" y="0.33333333333337123" width="138.66666666666663" height="80.333333333333329"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h7-Dy-mda">
-                                                <rect key="frame" x="39.333333333333343" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="39.333333333333343" y="0.33333333333337123" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="B0Z-DQ-jVj"/>
                                                     <constraint firstAttribute="width" constant="60" id="BoB-oJ-s7b"/>
@@ -442,22 +442,22 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEs-Ni-Omf">
-                                                <rect key="frame" x="37.666666666666657" y="79.666666666666629" width="63.333333333333343" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="24.66666666666665" y="60.333333333333321" width="89.333333333333314" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="1Dn-nw-9W0"/>
+                                            <constraint firstAttribute="height" constant="80" id="1Dn-nw-9W0"/>
                                             <constraint firstItem="3h7-Dy-mda" firstAttribute="top" secondItem="gMl-Z7-SDD" secondAttribute="top" id="XVf-tu-zRa"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FUa-0d-Dr6">
-                                        <rect key="frame" x="276.66666666666669" y="0.0" width="137.33333333333331" height="100"/>
+                                        <rect key="frame" x="276.66666666666669" y="0.33333333333337123" width="137.33333333333331" height="80.333333333333329"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-Ru-oWV">
-                                                <rect key="frame" x="38.666666666666629" y="0.0" width="60" height="60"/>
+                                                <rect key="frame" x="38.666666666666629" y="0.33333333333337123" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="G2B-Ob-xVP"/>
                                                     <constraint firstAttribute="height" constant="60" id="S5d-Ob-T8f"/>
@@ -468,15 +468,15 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-HR-8oP">
-                                                <rect key="frame" x="42" y="79.666666666666629" width="53.333333333333343" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="30.333333333333314" y="60.333333333333321" width="77" height="20.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="xJf-Ru-oWV" firstAttribute="top" secondItem="FUa-0d-Dr6" secondAttribute="top" id="bLX-mP-skP"/>
-                                            <constraint firstAttribute="height" constant="100" id="dzB-it-zoj"/>
+                                            <constraint firstAttribute="height" constant="80" id="dzB-it-zoj"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>

@@ -12,18 +12,42 @@ import CoreData
 import Fabric
 import UserNotifications
 import Crashlytics
+import FirebaseInstanceID
+import FirebaseMessaging
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDelegate, MessagingDelegate {
 
     var window: UIWindow?
 
+    // The callback to handle data message received via FCM for devices running iOS 10 or above.
+    func application(received remoteMessage: MessagingRemoteMessage) {
+        print("aa")
+        print(remoteMessage.appData)
+    }
+    
+   
+
+    // [START receive_message]
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+        // Print message ID.
+      
+        
+        // Print full message.
+        print("aaa ")
+        print(userInfo)
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
     
         Fabric.with([Crashlytics.self])
         
-        /*
+        
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
             UNUserNotificationCenter.current().delegate = (self as! UNUserNotificationCenterDelegate)
@@ -40,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerForRemoteNotifications()
 
- */
+ 
         // Override point for customization after application launch.
         return true
     }
@@ -119,4 +143,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 }
+
+
 

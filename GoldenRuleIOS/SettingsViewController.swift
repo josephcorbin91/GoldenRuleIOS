@@ -253,7 +253,10 @@ stopSoundMusic()
         var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
         
         print("SoundMusic " + String(soundMusic) + "SoundCime " + String(SoundChime) + "Vibration "+String(Vibration) + "Sponsoerd Notification "+String(SponsoredNotification) + "Default Notification " + String(DefaultNotification))
-        print(" Sponsor is " + sponsor!)
+        if let sponsorName = sponsor{
+            print(" Sponsor is " + sponsor!)
+
+        }
         
     }
     /*

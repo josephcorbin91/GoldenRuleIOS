@@ -21,8 +21,8 @@
 		AB2168FD208D0135004CF306 /* chime.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB2168FA208D00F6004CF306 /* chime.wav */; };
 		AB2168FE208D0135004CF306 /* music.wav in Resources */ = {isa = PBXBuildFile; fileRef = AB2168FB208D011E004CF306 /* music.wav */; };
 		AB216900208D5328004CF306 /* no_sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2168FF208D5328004CF306 /* no_sponsor.png */; };
-		AB216904208D5EB5004CF306 /* sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = AB216903208D5EB5004CF306 /* sponsor.png */; };
 		AB216906208D68E8004CF306 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB216905208D68E8004CF306 /* Alarm.swift */; };
+		ABBC497120952AA400C4AF2D /* sponsor.png in Resources */ = {isa = PBXBuildFile; fileRef = ABBC497020952AA400C4AF2D /* sponsor.png */; };
 		AC2B63E311B5ADAFBE901978 /* Pods_Golden_RuleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6181EC4BD36EB854704AD0 /* Pods_Golden_RuleUITests.framework */; };
 		D0BB6C16D6127E0F8CEEE099 /* Pods_GoldenRuleIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C27DF05E300ED1A8AD0F758 /* Pods_GoldenRuleIOSTests.framework */; };
 		DD0C67512069B2E600F1DFDB /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0C67502069B2E600F1DFDB /* NewsCell.swift */; };
@@ -98,8 +98,8 @@
 		AB2168FA208D00F6004CF306 /* chime.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = chime.wav; sourceTree = "<group>"; };
 		AB2168FB208D011E004CF306 /* music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = music.wav; path = ../../../Downloads/music.wav; sourceTree = "<group>"; };
 		AB2168FF208D5328004CF306 /* no_sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = no_sponsor.png; path = ../../no_sponsor.png; sourceTree = "<group>"; };
-		AB216903208D5EB5004CF306 /* sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsor.png; path = ../../../Desktop/sponsor.png; sourceTree = "<group>"; };
 		AB216905208D68E8004CF306 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		ABBC497020952AA400C4AF2D /* sponsor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sponsor.png; path = Assets.xcassets/sponsor.png; sourceTree = "<group>"; };
 		D4E34F4A2CDB670E07C3834F /* Pods-Golden RuleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden RuleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Golden RuleTests/Pods-Golden RuleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD0C67502069B2E600F1DFDB /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		DD1E29492069651800A6ACDD /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -218,7 +218,6 @@
 		A91ED3121FF42AA500AF1EB8 /* GoldenRuleIOS */ = {
 			isa = PBXGroup;
 			children = (
-				AB216903208D5EB5004CF306 /* sponsor.png */,
 				AB2168FA208D00F6004CF306 /* chime.wav */,
 				AB2168FB208D011E004CF306 /* music.wav */,
 				AB1A9ADE2082CB0100740CB6 /* GoogleService-Info.plist */,
@@ -227,6 +226,7 @@
 				DD1E29482069651800A6ACDD /* Model.xcdatamodeld */,
 				A91ED3191FF42AA500AF1EB8 /* Main.storyboard */,
 				A91ED31C1FF42AA500AF1EB8 /* Assets.xcassets */,
+				ABBC497020952AA400C4AF2D /* sponsor.png */,
 				6A06D0260C11C137C4E1AD89 /* Pods */,
 				A91ED3211FF42AA500AF1EB8 /* Info.plist */,
 				A91ED31E1FF42AA500AF1EB8 /* LaunchScreen.storyboard */,
@@ -392,7 +392,7 @@
 				AB1A9ADD2082C98D00740CB6 /* Info.plist in Resources */,
 				AB1A9ADC2082C98900740CB6 /* Main.storyboard in Resources */,
 				AB1A9AD82082C68400740CB6 /* LaunchScreen.storyboard in Resources */,
-				AB216904208D5EB5004CF306 /* sponsor.png in Resources */,
+				ABBC497120952AA400C4AF2D /* sponsor.png in Resources */,
 				AB1A9AD62082C67D00740CB6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
