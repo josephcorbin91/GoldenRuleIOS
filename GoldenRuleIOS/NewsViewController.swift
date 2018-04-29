@@ -14,6 +14,21 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         return newsData.count
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let newsItem = newsData[indexPath.row]
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            context.delete(newsItem)
+            
+            self.newsData.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        
+      
+        
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let newsItem = newsData[indexPath.row]
         let newsCell = tableView.dequeueReusableCell(withIdentifier: "newsItemIdentifier", for: indexPath) as! NewsCell
@@ -76,7 +91,15 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
             debugPrint("Image not available")
             
         }
+        
+        // Add a background view to the table view
+        let backgroundImage = UIImage(named: "news_background.png")
+        let imageView = UIImageView(image: backgroundImage)
+        self.newsTableView.backgroundView = imageView
+        // no lines where there aren't cells
+        let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 0, height: 0))
 
+        newsTableView.tableFooterView = UIView(frame: rect)
       
         // Do any additional setup after loading the view.
     }
