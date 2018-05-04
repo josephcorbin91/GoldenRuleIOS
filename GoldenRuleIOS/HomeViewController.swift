@@ -85,11 +85,11 @@ class HomeViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         
         var date = DateComponents()
-        date.hour = 17
-        date.minute = 50
+        date.hour = 12
+        date.minute = 34
         date.second = 00
         //let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 6000, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 24*60*60, repeats: true)
         
         let requestIdentifier = "alarmNotification"
         let request = UNNotificationRequest(identifier: requestIdentifier,
@@ -99,6 +99,25 @@ class HomeViewController: UIViewController, UNUserNotificationCenterDelegate {
                                                withCompletionHandler: { (error) in
                                                 // Handle error
         })
+        printVariables()
+    }
+    
+    
+    func printVariables(){
+        
+        var sponsor = UserDefaults.standard.string(forKey: "Sponsored")
+        var soundMusic = UserDefaults.standard.bool(forKey: "SoundMusic")
+        var SoundChime = UserDefaults.standard.bool(forKey: "SoundChime")
+        var Vibration = UserDefaults.standard.bool(forKey: "Vibration")
+        var SponsoredNotification = UserDefaults.standard.bool(forKey: "Sponsored Notification")
+        var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
+        
+        print("SoundMusic " + String(soundMusic) + "SoundCime " + String(SoundChime) + "Vibration "+String(Vibration) + "Sponsoerd Notification "+String(SponsoredNotification) + "Default Notification " + String(DefaultNotification))
+        if let sponsorName = sponsor{
+            print(" Sponsor is " + sponsor!)
+            
+        }
+        
     }
     
     
