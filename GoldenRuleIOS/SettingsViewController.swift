@@ -13,6 +13,15 @@ import UserNotifications
 class SettingsViewController: UIViewController {
 var player: AVAudioPlayer?
 
+    @IBAction func backButtonPressed(_ sender: Any) {
+        
+        
+        stopSoundChime()
+        stopSoundMusic()
+        
+            
+        
+    }
     
     func repeatNotification(){
         
@@ -53,10 +62,11 @@ var player: AVAudioPlayer?
         
         
         var date = DateComponents()
-        date.hour = 12
-        date.minute = 26
-        //let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        date.hour = 21
+        date.minute = 22
+        date.second = 00
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 600, repeats: true)
         
         let requestIdentifier = "alarmNotification"
         let request = UNNotificationRequest(identifier: requestIdentifier,
@@ -65,6 +75,14 @@ var player: AVAudioPlayer?
         UNUserNotificationCenter.current().add(request,
                                                withCompletionHandler: { (error) in
                                                 // Handle error
+        })
+        
+        let center = UNUserNotificationCenter.current()
+        center.getPendingNotificationRequests(completionHandler: { requests in
+            for request in requests {
+                print("Notifications ")
+                print(request)
+            }
         })
     }
     
@@ -257,6 +275,15 @@ stopSoundMusic()
             print(" Sponsor is " + sponsor!)
 
         }
+        
+        
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        print("hours = \(hour):\(minutes):\(seconds)")
         
     }
     /*

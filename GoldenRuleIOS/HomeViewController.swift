@@ -88,8 +88,8 @@ class HomeViewController: UIViewController, UNUserNotificationCenterDelegate {
         date.hour = 12
         date.minute = 34
         date.second = 00
-        //let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 24*60*60, repeats: true)
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
+        //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 24*60*60, repeats: true)
         
         let requestIdentifier = "alarmNotification"
         let request = UNNotificationRequest(identifier: requestIdentifier,
