@@ -24,7 +24,7 @@ var player: AVAudioPlayer?
     }
     
     func repeatNotification(){
-        
+        print("Setting alarm")
         printVariables()
         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: ["alarmNotification"])
         var sponsor = UserDefaults.standard.string(forKey: "Sponsored")
@@ -62,8 +62,8 @@ var player: AVAudioPlayer?
         
         
         var date = DateComponents()
-        date.hour = 21
-        date.minute = 35
+        date.hour = 12
+        date.minute = 34
         date.second = 00
         let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
         //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 600, repeats: true)
@@ -80,7 +80,7 @@ var player: AVAudioPlayer?
         let center = UNUserNotificationCenter.current()
         center.getPendingNotificationRequests(completionHandler: { requests in
             for request in requests {
-                print("Notifications ")
+                print("Notifications sent")
                 print(request)
             }
         })
