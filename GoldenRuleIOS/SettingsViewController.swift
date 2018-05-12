@@ -63,7 +63,7 @@ var player: AVAudioPlayer?
         
         var date = DateComponents()
         date.hour = 21
-        date.minute = 22
+        date.minute = 35
         date.second = 00
         let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: true)
         //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 600, repeats: true)
@@ -164,6 +164,8 @@ var player: AVAudioPlayer?
             print("SoundChime "+String(UserDefaults.standard.bool(forKey: "SoundChime")))
 playSoundChime()
             SoundMusic.setOn(false, animated: false)
+            UserDefaults.standard.set(false, forKey: "SoundMusic") //Bool
+
 
 
         }else{
@@ -183,9 +185,13 @@ stopSoundChime()
             print("SoundMusic "+String(UserDefaults.standard.bool(forKey: "SoundMusic")))
 
             SoundChime.setOn(false, animated: false)
+            UserDefaults.standard.set(false, forKey: "SoundChime") //Bool
+
+            
 playSoundMusic()
         }else{
                         UserDefaults.standard.set(false, forKey: "SoundMusic") //Bool
+            
             print("SoundMusic "+String(UserDefaults.standard.bool(forKey: "SoundMusic")))
 stopSoundMusic()
 
@@ -210,11 +216,15 @@ stopSoundMusic()
         if OnScreenNotificationsSwitch.isOn{
         print("default on")
             UserDefaults.standard.set(true, forKey: "Default Notification") //Bool
+            
 
         let alert = DefaultNotificationAlert(title: "Default Notification", image: UIImage(named: "no_sponsor")!)
         
         alert.show(animated: true)
             SponsorSwitch.setOn(false, animated: false)
+            UserDefaults.standard.set(false, forKey: "Sponsored Notification") //Bool
+            UserDefaults.standard.set("", forKey: "Sponsored") //Bool
+
         }else{
             UserDefaults.standard.set(false, forKey: "Default Notification") //Bool
 
@@ -230,6 +240,8 @@ stopSoundMusic()
             
             alert.show(animated: true)
             OnScreenNotificationsSwitch.setOn(false, animated: false)
+            UserDefaults.standard.set(false, forKey: "Default Notification") //Bool
+
         }
         else{
             UserDefaults.standard.set(false, forKey: "Sponsored Notification") //Bool
@@ -240,7 +252,26 @@ stopSoundMusic()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        
+        var soundMusic = UserDefaults.standard.bool(forKey: "SoundMusic")
+        var chime = UserDefaults.standard.bool(forKey: "SoundChime")
+        var SponsoredNotification = UserDefaults.standard.bool(forKey: "Sponsored Notification")
+        var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
+        
+        if(soundMusic){
+            SoundMusic.setOn(true, animated: false)
+        }
+        if(chime){
+            SoundChime.setOn(true, animated: false)
+        }
+        if(SponsoredNotification)
+        {
+            SponsorSwitch.setOn(true, animated: false)
+        }
+        if(DefaultNotification){
+        
+            OnScreenNotificationsSwitch.setOn(true, animated: false)
+        }
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "background_settings.png")?.draw(in: self.view.bounds)
         
@@ -252,6 +283,8 @@ stopSoundMusic()
             debugPrint("Image not available")
             
         }
+        
+        
 
     }
 

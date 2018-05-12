@@ -24,8 +24,37 @@ class HomeViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         completionHandler([.alert, .sound])
     }
+    
+    
+    func printVariables(){
+        
+        var sponsor = UserDefaults.standard.string(forKey: "Sponsored")
+        var soundMusic = UserDefaults.standard.bool(forKey: "SoundMusic")
+        var SoundChime = UserDefaults.standard.bool(forKey: "SoundChime")
+        var Vibration = UserDefaults.standard.bool(forKey: "Vibration")
+        var SponsoredNotification = UserDefaults.standard.bool(forKey: "Sponsored Notification")
+        var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
+        
+        print("SoundMusic " + String(soundMusic) + "SoundCime " + String(SoundChime) + "Vibration "+String(Vibration) + "Sponsoerd Notification "+String(SponsoredNotification) + "Default Notification " + String(DefaultNotification))
+        if let sponsorName = sponsor{
+            print(" Sponsor is " + sponsor!)
+            
+        }
+        
+        
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        print("hours = \(hour):\(minutes):\(seconds)")
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        printVariables()
         UIGraphicsBeginImageContext(self.view.frame.size)
         UIImage(named: "home")?.draw(in: self.view.bounds)
         
@@ -102,23 +131,6 @@ class HomeViewController: UIViewController, UNUserNotificationCenterDelegate {
         printVariables()
     }
     
-    
-    func printVariables(){
-        
-        var sponsor = UserDefaults.standard.string(forKey: "Sponsored")
-        var soundMusic = UserDefaults.standard.bool(forKey: "SoundMusic")
-        var SoundChime = UserDefaults.standard.bool(forKey: "SoundChime")
-        var Vibration = UserDefaults.standard.bool(forKey: "Vibration")
-        var SponsoredNotification = UserDefaults.standard.bool(forKey: "Sponsored Notification")
-        var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
-        
-        print("SoundMusic " + String(soundMusic) + "SoundCime " + String(SoundChime) + "Vibration "+String(Vibration) + "Sponsoerd Notification "+String(SponsoredNotification) + "Default Notification " + String(DefaultNotification))
-        if let sponsorName = sponsor{
-            print(" Sponsor is " + sponsor!)
-            
-        }
-        
-    }
     
     
     override func didReceiveMemoryWarning() {
