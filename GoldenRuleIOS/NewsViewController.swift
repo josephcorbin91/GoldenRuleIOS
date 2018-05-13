@@ -46,38 +46,9 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     private var newsData: [NSManagedObject]=[]
 
     @IBOutlet weak var newsTableView: UITableView!
-    func seedIOSDatabase(){
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "News", in: context)
-        let news = NSManagedObject(entity: entity!,insertInto: context)
-        news.setValue("time", forKey: "mNewsTitle")
-        news.setValue("time", forKey: "mNewsBody")
-        news.setValue("time", forKey: "mTime")
-        do {
-            try context.save()
-        }catch{
-        }
-        
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "News")
-        request.returnsObjectsAsFaults = false
-        do {
-            print("Failed saving")
-            let result = try context.fetch(request)
-            for data in result as! [NSManagedObject]{
-                print(data.value(forKey: "mTime") as! String)
-            }
-        }
-        catch{
-            print("Failed")
-        }
-        
-    }
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        seedIOSDatabase()
         self.newsTableView.delegate=self
         self.newsTableView.dataSource=self
         UIGraphicsBeginImageContext(self.view.frame.size)

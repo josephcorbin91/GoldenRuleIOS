@@ -158,6 +158,40 @@ extension AppDelegate : MessagingDelegate {
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
         print("received")
         NSLog("[RemoteNotification] applicationState: \(applicationStateString) didReceiveRemoteNotification for iOS9: \(userInfo)")
+        
+       
+        let title = userInfo[AnyHashable("mNewsTitle")]!
+        let body = userInfo[AnyHashable("mNewsBody")]!
+        let time = userInfo[AnyHashable("mTime")]!
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "News", in: context)
+        let news = NSManagedObject(entity: entity!,insertInto: context)
+        print(title)
+        print(time)
+        print(body)
+        news.setValue(title, forKey: "mNewsTitle")
+        news.setValue(body, forKey: "mNewsBody")
+        news.setValue(time, forKey: "mTime")
+        do {
+            try context.save()
+        }catch{
+        }
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "News")
+        request.returnsObjectsAsFaults = false
+        do {
+            print("Failed saving")
+            let result = try context.fetch(request)
+            for data in result as! [NSManagedObject]{
+                print(data.value(forKey: "mTime") as! String)
+                print(data.value(forKey: "mNewsBody") as! String)
+                print(data.value(forKey: "mNewsTitle") as! String)
+            }
+        }
+        catch{
+            print("Failed")
+        }
         if UIApplication.shared.applicationState == .active {
             //TODO: Handle foreground notification
         } else {
@@ -165,6 +199,8 @@ extension AppDelegate : MessagingDelegate {
         }
     }
     
+ 
+
     
  
 }
