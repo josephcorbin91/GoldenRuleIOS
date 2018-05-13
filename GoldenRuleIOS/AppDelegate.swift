@@ -30,9 +30,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             NSLog("[RemoteNotification] applicationState: \(applicationStateString) didFinishLaunchingWithOptions for iOS9: \(userInfo)")
             //TODO: Handle background notification
         }
+        printVariables()
         return true
     }
     
+    func printVariables(){
+        
+        var sponsor = UserDefaults.standard.string(forKey: "Sponsored")
+        var soundMusic = UserDefaults.standard.bool(forKey: "SoundMusic")
+        var SoundChime = UserDefaults.standard.bool(forKey: "SoundChime")
+        var Vibration = UserDefaults.standard.bool(forKey: "Vibration")
+        var SponsoredNotification = UserDefaults.standard.bool(forKey: "Sponsored Notification")
+        var DefaultNotification = UserDefaults.standard.bool(forKey: "Default Notification")
+        
+        print("SoundMusic " + String(soundMusic) + "SoundCime " + String(SoundChime) + "Vibration "+String(Vibration) + "Sponsoerd Notification "+String(SponsoredNotification) + "Default Notification " + String(DefaultNotification))
+        if let sponsorName = sponsor{
+            print(" Sponsor is " + sponsor!)
+            
+        }
+        
+        
+        let date = Date()
+        let calendar = Calendar.current
+        
+        let hour = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let seconds = calendar.component(.second, from: date)
+        print("hours = \(hour):\(minutes):\(seconds)")
+        
+    }
     var applicationStateString: String {
         if UIApplication.shared.applicationState == .active {
             return "active"
@@ -130,6 +156,7 @@ extension AppDelegate : MessagingDelegate {
     
     // iOS9, called when presenting notification in foreground
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        print("received")
         NSLog("[RemoteNotification] applicationState: \(applicationStateString) didReceiveRemoteNotification for iOS9: \(userInfo)")
         if UIApplication.shared.applicationState == .active {
             //TODO: Handle foreground notification
