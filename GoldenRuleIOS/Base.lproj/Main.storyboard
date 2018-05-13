@@ -307,8 +307,8 @@ For details visit:  GoldenRuleReminder.com</string>
                                                     <rect key="frame" x="0.0" y="0.0" width="394" height="219.66666666666666"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2o-1d-Ypy">
-                                                    <rect key="frame" x="322" y="21" width="60" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="12:34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2o-1d-Ypy">
+                                                    <rect key="frame" x="284" y="21" width="100" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="8wV-xz-fjW"/>
                                                         <constraint firstAttribute="height" constant="21" id="CE4-dn-NZs"/>
@@ -343,7 +343,7 @@ For details visit:  GoldenRuleReminder.com</string>
                                                 <constraint firstAttribute="bottom" secondItem="cUs-4k-IIR" secondAttribute="bottom" id="JPi-cr-2Xo"/>
                                                 <constraint firstItem="O2o-1d-Ypy" firstAttribute="top" secondItem="1w5-An-upH" secondAttribute="top" constant="21" id="JuL-oB-zgF"/>
                                                 <constraint firstItem="z5v-3g-wF0" firstAttribute="top" secondItem="M0l-BC-9np" secondAttribute="bottom" constant="8" id="POf-RQ-Yid"/>
-                                                <constraint firstAttribute="trailing" secondItem="O2o-1d-Ypy" secondAttribute="trailing" constant="12" id="VuT-aZ-uwh"/>
+                                                <constraint firstAttribute="trailing" secondItem="O2o-1d-Ypy" secondAttribute="trailing" constant="50" id="VuT-aZ-uwh"/>
                                                 <constraint firstAttribute="trailing" secondItem="cUs-4k-IIR" secondAttribute="trailing" id="fAK-GB-aGp"/>
                                                 <constraint firstAttribute="trailing" secondItem="M0l-BC-9np" secondAttribute="trailing" constant="10" id="kF7-h3-2YG"/>
                                                 <constraint firstItem="M0l-BC-9np" firstAttribute="top" secondItem="O2o-1d-Ypy" secondAttribute="bottom" constant="30" id="nWt-I1-WEt"/>
@@ -511,6 +511,6 @@ For details visit:  GoldenRuleReminder.com</string>
         <image name="video_image" width="1218" height="824"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="djB-Ld-eJq"/>
+        <segue reference="hPL-4W-cUO"/>
     </inferredMetricsTieBreakers>
 </document>

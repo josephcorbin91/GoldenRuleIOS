@@ -35,6 +35,10 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         newsCell.TitleLabel.text=newsItem.value(forKey: "mNewsTitle") as? String
         newsCell.BodyLabel.text=newsItem.value(forKey: "mNewsBody") as? String
         newsCell.TimeLabel.text=newsItem.value(forKey: "mTime") as? String
+        newsCell.BodyLabel.numberOfLines = 0
+        newsCell.BodyLabel.sizeToFit()
+        
+      
        
         return newsCell
     }
